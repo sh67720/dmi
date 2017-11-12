@@ -1,0 +1,95 @@
+#set($page_title="编辑案例")
+#set($layout="/layout/layoutbackend.vm")
+
+<link rel="stylesheet" href="#springUrl("/resources/uploadfile/css/webuploader.css")" type="text/css">
+<link rel="stylesheet" href="#springUrl("/resources/uploadfile/css/diyUpload.css")" type="text/css">
+<script src="#springUrl("/resources/uploadfile/js/webuploader.html5only.min.js")"></script>
+<script src="#springUrl("/resources/uploadfile/js/diyUpload.js")"></script>
+
+<ol class="breadcrumb">
+    <li><a href="#springUrl("/works/list")">案例管理</a></li>
+    <li><a href="javascript:void(0);">编辑案例</a></li>
+</ol>
+
+<form class="form-horizontal" id="worksFormEdit">
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">品牌名称</label>
+        <div class="col-sm-3">
+        #*#springFormInput("works.name" 'class="form-control" maxlength="100"')*#
+            <textarea class="form-control" placeholder=""  id="name" name="name" rows="1" maxlength="100">$works.name</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">服务内容</label>
+        <div class="col-sm-3">
+        #*#springFormTextarea("works.serviceContent" 'id="description" class="form-control" rows="3" cols="10" maxlength="500"')*#
+            <textarea class="form-control" placeholder="" id="serviceContent" name="serviceContent" rows="3" maxlength="500">$works.serviceContent</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">类别</label>
+        <div class="col-sm-5">
+            <select id="categoryTypes" name="categoryTypes" class="selectpicker show-tick" data-size="10" itemLabel="value" itemValue="key">
+                <option value="">请选择类别</option>
+                #foreach($item in $categoryTypes)
+                    <option value="$item.code"
+                        #if($item.code == $works.category) selected = "selected" #end>$item.name</option>
+                #end
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">所属行业</label>
+        <div class="col-sm-5">
+            <select id="industryTypes" name="industryTypes" class="selectpicker show-tick" data-size="10" itemLabel="value" itemValue="key">
+                <option value="">请选择所属行业</option>
+                #foreach($item in $industryTypes)
+                    <option value="$item.code"
+                        #if($item.code == $works.industry) selected = "selected" #end>$item.name</option>
+                #end
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">品牌介绍</label>
+        <div class="col-sm-5">
+        #*#springFormTextarea("works.brandIntroduction" 'id="description" class="form-control" rows="5" cols="10" maxlength="1000"')*#
+            <textarea class="form-control" placeholder="" id="brandIntroduction" name="brandIntroduction" rows="5" maxlength="1000">$works.brandIntroduction</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">其他</label>
+        <div class="col-sm-5">
+        #*#springFormTextarea("works.remark" 'id="description" class="form-control" rows="5" cols="10" maxlength="1000"')*#
+            <textarea class="form-control" placeholder="" id="remark" name="remark" rows="5" maxlength="1000">$works.remark</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">是否显示在首页</label>
+        <div class="col-sm-3">
+            <label><input name="inHomepage" type="radio" value="false"
+                #if($works.homepageShow == "false") checked = "checked" #end/>否</label>
+            <label><input name="inHomepage" type="radio" value="true"
+                #if($works.homepageShow == "true") checked = "checked" #end/>是</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-3">
+            <button type="button" class="btn btn-default prevPage">返回</button>
+            <input class="btn btn-success" type="button" value="提交" onclick="worksedit_commit($works.id)">
+        </div>
+    </div>
+</form>
+#*<script src="#springUrl("/resources/js/works/edit.js")"></script>*#
+<script src="#springUrl("/resources/js/works/add.js")"></script>
+
+
+
+

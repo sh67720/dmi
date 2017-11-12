@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shdmi.dao.WorksMapper">
+    <!--案例-->
+    <insert id="add" parameterType="com.shdmi.entity.Works">
+        INSERT INTO workcase(`name`, category, industry, serviceContent, brandIntroduction, homepageShow, remark, createTime, updateTime)
+        VALUES (#{name}, #{category}, #{industry}, #{serviceContent}, #{brandIntroduction}, homepageShow, remark, now(), now());
+    </insert>
+
+    <update id="update" parameterType="com.shdmi.entity.Works">
+        UPDATE workcase SET `name` = #{name}, category = #{category}, industry = #{industry}, serviceContent = #{serviceContent},
+        brandIntroduction = #{brandIntroduction}, homepageShow = #{homepageShow}, remark = #{remark}, updateTime = now() WHERE id = #{id};
+    </update>
+
+    <delete id="delete">
+        DELETE FROM workcase WHERE id = #{id}
+    </delete>
+
+    <select id="count" resultType="java.lang.Integer">
+        SELECT count(*) FROM workcase WHERE 1=1
+    </select>
+
+    <select id="findList" resultType="com.shdmi.entity.Works">
+        SELECT * FROM workcase WHERE 1=1
+        ORDER BY updateTime ASC limit #{index},#{pageSize};
+    </select>
+
+    <select id="get" resultType="com.shdmi.entity.Works">
+        SELECT * FROM workcase WHERE id = #{id}
+    </select>
+
+    <!--案例图片-->
+    <insert id="picadd" parameterType="com.shdmi.entity.WorksPicture">
+        INSERT INTO workcasepicture(workcaseId, path, iscover, createTime, updateTime)
+        VALUES (#{workcaseId}, #{path}, #{iscover}, now(), now());
+    </insert>
+
+    <select id="piccount" resultType="java.lang.Integer">
+        SELECT count(*) FROM workcasepicture WHERE 1=1
+        <if test="workcaseId != 0">
+            AND workcaseId = #{workcaseId}
+        </if>
+    </select>
+
+    <select id="picfindList" resultType="com.shdmi.entity.WorksPicture">
+        SELECT * FROM workcasepicture WHERE 1=1
+        <if test="workcaseId != 0">
+            AND workcaseId = #{workcaseId}
+        </if>
+        ORDER BY createTime DESC limit #{index},#{pageSize};
+    </select>
+
+    <delete id="picdelete">
+        DELETE FROM workcasepicture WHERE id = #{id}
+    </delete>
+
+    <select id="selecePicId" resultType="com.shdmi.entity.WorksPicture">
+        SELECT * FROM workcasepicture WHERE 1=1
+        <if test="id != 0">
+            AND id = #{id}
+        </if>
+    </select>
+
+    <select id="selecePicWorkcaseId" resultType="com.shdmi.entity.WorksPicture">
+        SELECT * FROM workcasepicture WHERE 1=1
+        <if test="workcaseId != 0">
+            AND workcaseId = #{workcaseId}
+        </if>
+    </select>
+</mapper>

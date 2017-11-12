@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shdmi.dao.ApplyMapper">
+    <select id="count" resultType="java.lang.Integer">
+        SELECT count(*) FROM apply WHERE 1=1
+        <if test="projectId != 0">
+            AND projectId = #{projectId}
+        </if>
+    </select>
+
+    <select id="findList" resultType="com.shdmi.entity.Apply">
+        SELECT * FROM apply WHERE 1=1
+        <if test="projectId != 0">
+            AND projectId = #{projectId}
+        </if>
+        ORDER BY createTime DESC limit #{index},#{pageSize};
+    </select>
+
+    <insert id="add" parameterType="com.shdmi.entity.Apply">
+        INSERT INTO apply(`type`, projectId, `name`, phone, address, createTime, updateTime)
+        VALUES (#{type}, #{projectId}, #{name}, #{phone}, #{address}, now(), now());
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM apply WHERE projectId = #{projectId}
+    </delete>
+
+    <select id="exist" resultType="java.lang.Integer">
+        SELECT count(*) FROM apply WHERE phone = #{phone}
+    </select>
+</mapper>

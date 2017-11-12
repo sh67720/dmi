@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shdmi.dao.PortalsMapper">
+    <insert id="add" parameterType="com.shdmi.entity.Client">
+        INSERT INTO client(clientCompanyName, clientName, clientTel, clientCity, requirement, createTime, updateTime)
+        VALUES (#{clientCompanyName}, #{clientName}, #{clientTel}, #{clientCity}, #{requirement}, now(), now());
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM client WHERE id = #{clientId}
+    </delete>
+
+    <select id="count" resultType="java.lang.Integer">
+        SELECT count(*) FROM client WHERE 1=1
+    </select>
+
+    <select id="findList" resultType="com.shdmi.entity.Client">
+        SELECT * FROM client WHERE 1=1
+        ORDER BY createTime DESC limit #{index},#{pageSize};
+    </select>
+
+    <select id="selectworks" resultType="com.shdmi.entity.Works">
+        SELECT * FROM workcase WHERE 1=1
+        ORDER BY createTime ASC;
+    </select>
+
+    <select id="selecthomepageworks" resultType="com.shdmi.entity.Works">
+        SELECT * FROM workcase WHERE 1=1
+        AND homepageShow = 1
+        ORDER BY createTime ASC;
+    </select>
+
+    <select id="selectwork" resultType="com.shdmi.entity.Works">
+        SELECT * FROM workcase WHERE 1=1
+        AND id = #{id}
+        ORDER BY createTime ASC;
+    </select>
+
+    <select id="selectworkspic" resultType="com.shdmi.entity.WorksPicture">
+        SELECT * FROM workcasepicture WHERE 1=1
+        <if test="workcaseId != 0">
+            AND workcaseId = #{workcaseId}
+        </if>
+        AND iscover = 0
+    </select>
+
+    <select id="selectworkscoverpic" resultType="com.shdmi.entity.WorksPicture">
+        SELECT * FROM workcasepicture WHERE 1=1
+        <if test="workcaseId != 0">
+            AND workcaseId = #{workcaseId}
+        </if>
+        AND iscover = 1
+    </select>
+</mapper>

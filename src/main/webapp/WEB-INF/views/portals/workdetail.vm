@@ -1,0 +1,39 @@
+#set($page_title="点创案例")
+#set($home_class="")
+#set($works_class="check")
+#set($about_class="")
+#set($career_class="")
+#set($contact_class="")
+
+<div class="main">
+    <div class="wrap">
+        <div class="showcons" style=" background:">
+            <div class="titles">
+                <p>$work.name</p>
+                #foreach($item in $industryTypes)
+                    #if($work.industry == $item.code)
+                        $item.name
+                    #end
+                #end
+                <br />$work.serviceContent
+            </div>
+            <div class="cons">$work.brandIntroduction</div>
+            <div class="clear"></div>
+        </div>
+        <div class="showpic">
+            #foreach($pic in $worksPictures)
+                <img src="#springUrl("$pic.path")" alt="" />
+            #end
+            <br />
+            <span style="white-space:normal;"></span>
+        </div>
+        <div class="msubejct">
+            新品牌创建
+            <font>&amp;</font> 老品牌提升
+        </div>
+        <div class="commonmore">
+            #*<a href="../cooperation/" class="joinusa joinusacheck">项目合作解疑</a>　*#
+            <a href="contact" class="joinusa">马上联系十树</a>
+        </div>
+    </div>
+</div>

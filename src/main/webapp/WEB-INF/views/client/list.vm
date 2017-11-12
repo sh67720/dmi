@@ -1,0 +1,34 @@
+#set($page_title="客户意向")
+#set($layout="/layout/layoutbackend.vm")
+
+<ol class="breadcrumb">
+    <li><a href="#springUrl("/client/list")">客户意向</a></li>
+    <li><a href="javascript:void(0);">意向列表</a></li>
+</ol>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>公司名称</th>
+            <th>姓名</th>
+            <th>联系电话</th>
+            <th>所在城市</th>
+            <th>项目需求</th>
+            <th>提交时间</th>
+        </tr>
+    </thead>
+    <tbody>
+        #foreach($client in $pageObj.result)
+        <tr>
+            <td>$!{velocityCount}</td>
+            <td>$!{client.clientCompanyName}</td>
+            <td>$!{client.clientName}</td>
+            <td>$!{client.clientTel}</td>
+            <td>$!{client.clientCity}</td>
+            <td>$!{client.requirement}</td>
+            <td>$!date.format('yyyy-MM-dd HH:mm:ss',$!{client.createTime})</td>
+        </tr>
+        #end
+    </tbody>
+</table>
+#pager("${rc.contextPath}$pageSkipUrl", $pageObj)

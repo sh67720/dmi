@@ -1,0 +1,53 @@
+#set($page_title="案例管理")
+#set($layout="/layout/layoutbackend.vm")
+
+<ol class="breadcrumb">
+    <li><a href="#springUrl("/works/list")">案例管理</a></li>
+    <li><a href="javascript:void(0);">案例列表</a></li>
+</ol>
+<div id="wrapper">
+    <div class="workslist_add">
+        <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/works/add")">新增</a>
+    </div>
+</div>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>品牌名称</th>
+            <th>类别</th>
+            <th>所属行业</th>
+            <th>修改时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        #foreach($works in $pageObj.result)
+        <tr>
+            <td>$!{velocityCount}</td>
+            <td>$!{works.name}</td>
+            #*<td>$!{works.category}</td>*#
+            #foreach($item in $categoryTypes)
+                #if($works.category == $item.code)
+                    #set($tem = $item.name)
+                    <td>$tem</td>
+                #end
+            #end
+            #*<td>$!{works.industry}</td>*#
+            #foreach($item in $industryTypes)
+                #if($works.industry == $item.code)
+                    #set($tem = $item.name)
+                    <td>$tem</td>
+                #end
+            #end
+            <td>$!date.format('yyyy-MM-dd HH:mm:ss',$!{works.updateTime})</td>
+            <td>
+                <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/works/edit/$!works.id")">编辑内容</a>
+                <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/works/piclist?worksId=$!works.id")">编辑图片</a>
+                <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/works/delete/$!works.id")" onclick="return confirm('确认要删除吗?')">删除</a>
+            </td>
+        </tr>
+        #end
+    </tbody>
+</table>
+#pager("${rc.contextPath}$pageSkipUrl", $pageObj)

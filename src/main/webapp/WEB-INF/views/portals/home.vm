@@ -1,0 +1,585 @@
+#set($page_title="首页")
+#set($home_class="check")
+#set($works_class="")
+#set($about_class="")
+#set($career_class="")
+#set($contact_class="")
+
+<div class="swiper-container-pc">
+    <div class="index-sildebox">
+        <div class="hd">
+            <ul>
+                <li class="l1 on">
+                    <div class="li" style="background-image:url(#springUrl("/resources/images/banner_small1.png"))"></div>
+                    <div class="li li-on" style="background-image:url(#springUrl("/resources/images/banner_small1.png"))"></div></li>
+                <li class="l2">
+                    <div class="li" style="background-image:url(#springUrl("/resources/images/banner_small2.png"))"></div>
+                    <div class="li li-on" style="background-image:url(#springUrl("/resources/images/banner_small2.png"))"></div></li>
+                <li class="l3">
+                    <div class="li" style="background-image:url(#springUrl("/resources/images/banner_small3.png"))"></div>
+                    <div class="li li-on" style="background-image:url(#springUrl("/resources/images/banner_small3.png"))"></div></li>
+                <li class="l4">
+                    <div class="li" style="background-image:url(#springUrl("/resources/images/banner_small4.png"))"></div>
+                    <div class="li li-on" style="background-image:url(#springUrl("/resources/images/banner_small4.png"))"></div></li>
+                <li class="l5">
+                    <div class="li" style="background-image:url(#springUrl("/resources/images/banner_small5.png"))"></div>
+                    <div class="li li-on" style="background-image:url(#springUrl("/resources/images/banner_small5.png"))"></div></li>
+            </ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li style="display:list-item;background-image:url(#springUrl("/resources/images/banner_big1.jpg"))"><a href=""></a></li>
+                <li style="display:list-item;background-image:url(#springUrl("/resources/images/banner_big2.jpg"))"><a href=""></a></li>
+                <li style="display:list-item;background-image:url(#springUrl("/resources/images/banner_big3.jpg"))"><a href=""></a></li>
+                <li style="display:list-item;background-image:url(#springUrl("/resources/images/banner_big4.jpg"))"><a href=""></a></li>
+                <li style="display:list-item;background-image:url(#springUrl("/resources/images/banner_big5.jpg"))"><a href=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrap2 about about2">
+    <div class="subject">点创
+        <span style="color:#f39800;">点创品牌</span>&nbsp;六大服务
+    </div>
+    <div class="workpic">
+        <img src="#springUrl("/resources/uploadfile/image/20171015/20171015151047_77554.jpg")" alt="" />
+    </div>
+</div>
+<div class="wrap about about2 about3">
+    <div class="msubejct">
+        <font>国内知名</font>品牌咨询公司
+    </div>
+</div>
+<div class="wrap about">
+    <ul class="ul1">
+        <li class="l1">
+            <div class="pic">
+                <div>
+                    <p></p>
+                </div>
+                <img src="#springUrl("/resources/images/b.png")" />
+            </div>
+            <div class="title">
+                行业先锋
+            </div>
+            <div class="cons">
+                点创品牌是一家全案策划与设计咨询公司，为客户提供
+                <span style="white-space:normal;">品牌</span>整体创新解决方案。
+            </div></li>
+        <li class="l2">
+            <div class="pic">
+                <div>
+                    <p></p>
+                </div>
+                <img src="#springUrl("/resources/images/b.png")" />
+            </div>
+            <div class="title">
+                北京上海
+            </div>
+            <div class="cons">
+                点创公司总部位于北京，并在上海有分公司，为全国客户提供跨区域服务。
+            </div></li>
+        <li class="l3">
+            <div class="pic">
+                <div>
+                    <p></p>
+                </div>
+                <img src="#springUrl("/resources/images/b.png")" />
+            </div>
+            <div class="title">
+                国际大奖
+            </div>
+            <div class="cons">
+                点创品牌是木马旗下子公司，集团共荣获德国红点，德国IF，美国IDEA等80
+                <span style="font-size:12.6316px;white-space:normal;">余</span>项大奖。
+            </div></li>
+        <li class="l4">
+            <div class="pic">
+                <div>
+                    <p></p>
+                </div>
+                <img src="#springUrl("/resources/images/b.png")" />
+            </div>
+            <div class="title">
+                全案经验
+            </div>
+            <div class="cons">
+                为客户提供从品牌策划、品牌设计、包装设计和品牌整合传播推广的全面解决方案。
+            </div></li>
+        <li class="l5">
+            <div class="pic">
+                <div>
+                    <p></p>
+                </div>
+                <img src="#springUrl("/resources/images/b.png")" />
+            </div>
+            <div class="title">
+                服务名企
+            </div>
+            <div class="cons">
+                点创服务12大行业，从世界500强，到本土优秀企业，积累了丰富的实战经验....
+            </div></li>
+        <div class="clear"></div>
+    </ul>
+    <ul class="ul2">
+        <li class="l1">
+            <div class="pic">
+                <img src="#springUrl("/resources/uploadfile/1498116403.jpg")" />
+            </div>
+            <div class="title">
+                行业先锋
+            </div></li>
+        <li class="l2">
+            <div class="pic">
+                <img src="#springUrl("/resources/uploadfile/1498116394.jpg")" />
+            </div>
+            <div class="title">
+                媒体采访
+            </div></li>
+        <li class="l3">
+            <div class="pic">
+                <img src="#springUrl("/resources/uploadfile/1498116386.jpg")" />
+            </div>
+            <div class="title">
+                荣誉奖项
+            </div></li>
+        <li class="l4">
+            <div class="pic">
+                <img src="#springUrl("/resources/uploadfile/1498116378.jpg")" />
+            </div>
+            <div class="title">
+                精英团队
+            </div></li>
+        <li class="l5">
+            <div class="pic">
+                <img src="#springUrl("/resources/uploadfile/1498116303.jpg")" />
+            </div>
+            <div class="title">
+                国际交流
+            </div></li>
+        <div class="clear"></div>
+    </ul>
+    <ul class="ul3">
+        <li class="l1">
+            <div class="title">
+                <span id="counter1">4</span>
+                <font>+</font>
+            </div>
+            <div class="cons">
+                二大
+                <span style="white-space:normal;">中心</span>城市
+            </div></li>
+        <li class="l2">
+            <div class="title">
+                <span id="counter2">10</span>
+                <font>+</font>
+            </div>
+            <div class="cons">
+                十年以上经验
+            </div></li>
+        <li class="l3">
+            <div class="title">
+                <span id="counter3">12</span>
+                <font>+</font>
+            </div>
+            <div class="cons">
+                服务十二大行业
+            </div></li>
+        <li class="l4">
+            <div class="title">
+                <span id="counter4">50</span>
+                <font>+</font>
+            </div>
+            <div class="cons">
+                几十名行业精英
+            </div></li>
+        <li class="l5">
+            <div class="title">
+                <span id="counter5">500</span>
+                <font>+</font>
+            </div>
+            <div class="cons">
+                服务500强企业
+            </div></li>
+        <div class="clear"></div>
+    </ul>
+</div>
+<div class="wrap">
+    <div class="msubejct msubejctpro2">
+        <font>服务世界500强</font>及优秀本土品牌
+    </div>
+    <div class="promenu promenu2">
+        <p><span>金融 银行 投资</span><span>食品 饮料 酒水</span><span>服装 家纺 鞋帽</span><span>工业 制造 交通</span><span>科技 互联网 电商</span><span>医药 美妆 母婴</span><span>地产 酒店 建材</span><span>教育 文化 培训</span><span>家居 家电 日用</span></p>
+    </div>
+    <ul class="product productindex">
+        #foreach($works in $homepageWorksList)
+            #if($!{velocityCount}%2 != 0)
+                <li>
+                    <div class="pic">
+                        <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url(#springUrl("$works.coverPic"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+                    </div>
+                    <div class="cons">
+                        <div class="title2">
+                            #foreach($item in $industryTypes)
+                                #if($works.industry == $item.code)
+                                    $item.name
+                                #end
+                            #end
+                        </div>
+                        <div class="title">
+                            <a href="#springUrl("/portals/workdetail/$!works.id")">$works.name</a>
+                        </div>
+                        <div class="title2">
+                            $works.serviceContent
+                        </div>
+                    </div></li>
+            #else
+                <li class="no">
+                    <div class="pic">
+                        <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url(#springUrl("$works.coverPic"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+                    </div>
+                    <div class="cons">
+                        <div class="title2">
+                            #foreach($item in $industryTypes)
+                                #if($works.industry == $item.code)
+                                    $item.name
+                                #end
+                            #end
+                        </div>
+                        <div class="title">
+                            <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank">$works.name</a>
+                        </div>
+                        <div class="title2">
+                            $works.serviceContent
+                        </div>
+                    </div></li>
+            #end
+        #end
+
+        #*<li>
+            <div class="pic">
+                <a href="show/f407.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1505535966.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    食品 饮料 酒水
+                </div>
+                <div class="title">
+                    <a href="show/f407.html" target="_blank">肯德基“K记饭桶”</a>
+                </div>
+                <div class="title2">
+                    品牌研究、品牌策划、LOGO设计、包装设计、产品创新、品牌传播
+                </div>
+            </div></li>
+        <li class="no">
+            <div class="pic">
+                <a href="show/f425.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1505466047.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    科技 互联网 电商
+                </div>
+                <div class="title">
+                    <a href="show/f425.html" target="_blank">海尔U宝机器人</a>
+                </div>
+                <div class="title2">
+                    品牌策划、包装设计、产品创新开发、品牌传播
+                </div>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="show/f391.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1500111075.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    工业 制造 交通
+                </div>
+                <div class="title">
+                    <a href="show/f391.html" target="_blank">登路普车旅品牌</a>
+                </div>
+                <div class="title2">
+                    VI设计
+                </div>
+            </div></li>
+        <li class="no">
+            <div class="pic">
+                <a href="show/f384.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1500104614.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    科技 互联网 电商
+                </div>
+                <div class="title">
+                    <a href="show/f384.html" target="_blank">微鲸智能电视</a>
+                </div>
+                <div class="title2">
+                    品牌研究、品牌定位、口号，命名、LOGO、VI、推广传播等全案策划
+                </div>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="show/f374.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1500091690.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    食品 饮料 酒水
+                </div>
+                <div class="title">
+                    <a href="show/f374.html" target="_blank">青岛啤酒</a>
+                </div>
+                <div class="title2">
+                    推广物料设计
+                </div>
+            </div></li>
+        <li class="no">
+            <div class="pic">
+                <a href="show/f368.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1500085692.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    食品 饮料 酒水
+                </div>
+                <div class="title">
+                    <a href="show/f368.html" target="_blank">爱哆哆喜饼</a>
+                </div>
+                <div class="title2">
+                    包装设计、推广物料设计
+                </div>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="show/f367.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1499670437.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    食品 饮料 酒水
+                </div>
+                <div class="title">
+                    <a href="show/f367.html" target="_blank">法门寺素饼</a>
+                </div>
+                <div class="title2">
+                    包装设计、礼品开发
+                </div>
+            </div></li>
+        <li class="no">
+            <div class="pic">
+                <a href="show/f361.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1499498944.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    家居 家电 日用
+                </div>
+                <div class="title">
+                    <a href="show/f361.html" target="_blank">莱克比德高端入户门</a>
+                </div>
+                <div class="title2">
+                    品牌命名、LOGO设计、VI设计
+                </div>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="show/f369.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1500090451.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    食品 饮料 酒水
+                </div>
+                <div class="title">
+                    <a href="show/f369.html" target="_blank">金字火腿</a>
+                </div>
+                <div class="title2">
+                    包装设计
+                </div>
+            </div></li>
+        <li class="no">
+            <div class="pic">
+                <a href="show/f372.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1500091282.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    食品 饮料 酒水
+                </div>
+                <div class="title">
+                    <a href="show/f372.html" target="_blank">偷吃熊</a>
+                </div>
+                <div class="title2">
+                    包装设计
+                </div>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="show/f375.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1500091744.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    食品 饮料 酒水
+                </div>
+                <div class="title">
+                    <a href="show/f375.html" target="_blank">青岛啤酒“炫奇”果啤</a>
+                </div>
+                <div class="title2">
+                    包装设计、推广物料设计
+                </div>
+            </div></li>
+        <li class="no">
+            <div class="pic">
+                <a href="show/f383.html" target="_blank"><span></span><p style=" background-image:url(#springUrl("/resources/uploadfile/1500102698.jpg"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+            </div>
+            <div class="cons">
+                <div class="title2">
+                    工业 制造 交通
+                </div>
+                <div class="title">
+                    <a href="show/f383.html" target="_blank">钛朗钢铁</a>
+                </div>
+                <div class="title2">
+                    LOGO设计、VI设计
+                </div>
+            </div></li>*#
+        <div class="clear"></div>
+    </ul>
+</div>
+<div class="wrap2 teamtotal">
+    <div class="msubejct">
+        <font>点创团队</font>=国内名校+海归精英
+    </div>
+    <div class="cons">
+        <a href="about/"><img src="#springUrl("/resources/uploadfile/image/20170908/20170908203920_15009.jpg")" alt="" /></a>
+    </div>
+</div>
+<div class="wrap pad1per">
+    <div class="msubejct">
+        行业大牌选择与
+        <font>点创</font>一起创新
+    </div>
+    <ul class="custom">
+        <li>
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192650.jpg")" /></a>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192645.jpg")" /></a>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192642.jpg")" /></a>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192638.jpg")" /></a>
+            </div></li>
+        <li class="no">
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192631.jpg")" /></a>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192621.jpg")" /></a>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192617.jpg")" /></a>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192613.jpg")" /></a>
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192608.jpg")" /></a>
+            </div></li>
+        <li class="no">
+            <div class="pic">
+                <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1499665847.jpg")" /></a>
+            </div></li>
+        <div class="clear"></div>
+    </ul>
+</div>
+<div class="wrap">
+    <div class="msubejct msubejctpro">
+        点创动态
+        <font>与</font>行业资讯
+    </div>
+    <ul class="indnews">
+        <li>
+            <div class="pic">
+                <a href="nshow/402.html"><img src="#springUrl("/resources/uploadfile/1500199160.jpg")" /></a>
+            </div>
+            <div class="title">
+                <a href="nshow/402.html">行业资讯 | OFO启用中文名小黄车,同时LOGO进行了微调</a>
+            </div>
+            <div class="addtime">
+                2017-07-16
+            </div></li>
+        <li>
+            <div class="pic">
+                <a href="nshow/405.html"><img src="#springUrl("/resources/uploadfile/1500199210.jpg")" /></a>
+            </div>
+            <div class="title">
+                <a href="nshow/405.html">行业资讯 | 阿里菜鸟流物启用全新LOGO形象</a>
+            </div>
+            <div class="addtime">
+                2017-07-16
+            </div></li>
+        <li class="no">
+            <div class="pic">
+                <a href="nshow/406.html"><img src="#springUrl("/resources/uploadfile/1500199218.jpg")" /></a>
+            </div>
+            <div class="title">
+                <a href="nshow/406.html">行业资讯 | 雀巢茶品NESTEA推出全新LOGO和包装</a>
+            </div>
+            <div class="addtime">
+                2017-07-16
+            </div></li>
+        <div class="clear"></div>
+    </ul>
+</div>
+<div class="index3">
+    <div class="msubejct">
+        新品牌创建
+        <font>&amp;</font> 老品牌提升
+    </div>
+    <div class="commonmore">
+        #*<a href="contact" class="joinusa joinusacheck">项目合作解疑</a>　*#
+        <a href="contact" class="joinusa">马上联系点创</a>
+    </div>
+</div>
+
+<script>
+    var options = {
+        useEasing : true,
+        useGrouping : true,
+        separator : '',
+        decimal : '.',
+        prefix : '',
+        suffix : ''
+    };
+    var demo = new CountUp("counter1", 0, 4, 0, 3, options);
+    var demo2 = new CountUp("counter2", 0, 10, 0,3, options);
+    var demo3 = new CountUp("counter3", 0, 12, 0,3, options);
+    var demo4 = new CountUp("counter4", 0, 50, 0,3, options);
+    var demo5 = new CountUp("counter5", 0, 500, 0,3, options);
+    if (document.body.offsetWidth>1280){
+        $(window).scroll(function(){
+            if($(window).scrollTop()>=600){
+                demo.start();
+                demo2.start();
+                demo3.start();
+                demo4.start();
+                demo5.start();
+            }
+        })
+    }else{
+        $(window).scroll(function(){
+            if($(window).scrollTop()>=100){
+                demo.start();
+                demo2.start();
+                demo3.start();
+                demo4.start();
+                demo5.start();
+            }
+        })
+    }
+</script>
+<script type="text/javascript">$(".index-sildebox").slide({mainCell:".bd ul",effect:"fade",autoPlay:true,delayTime:1000});//effect:"left"</script>

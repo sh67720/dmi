@@ -1,0 +1,397 @@
+#set($page_title="点创团队")
+#set($home_class="")
+#set($works_class="")
+#set($about_class="check")
+#set($career_class="")
+#set($contact_class="")
+
+<div class="main">
+    <div class="aboutbanner">
+        <img src="#springUrl("/resources/uploadfile/1500185651.jpg")" />
+    </div>
+    <div class="wrap about about2 about3">
+        <div class="blank"></div>
+    </div>
+    <div class="wrap about">
+        <ul class="ul1">
+            <li class="l1">
+                <div class="pic">
+                    <div>
+                        <p></p>
+                    </div>
+                    <img src="#springUrl("/resources/images/b.png")" />
+                </div>
+                <div class="title">
+                    行业先锋
+                </div>
+                <div class="cons">
+                    点创品牌是一家全案策划与设计咨询公司，为客户提供
+                    <span style="white-space:normal;">品牌</span>整体创新解决方案。
+                </div></li>
+            <li class="l2">
+                <div class="pic">
+                    <div>
+                        <p></p>
+                    </div>
+                    <img src="#springUrl("/resources/images/b.png")" />
+                </div>
+                <div class="title">
+                    北京上海
+                </div>
+                <div class="cons">
+                    点创公司总部位于北京，并在上海有分公司，为全国客户提供跨区域服务。
+                </div></li>
+            <li class="l3">
+                <div class="pic">
+                    <div>
+                        <p></p>
+                    </div>
+                    <img src="#springUrl("/resources/images/b.png")" />
+                </div>
+                <div class="title">
+                    国际大奖
+                </div>
+                <div class="cons">
+                    点创品牌是木马旗下子公司，集团共荣获德国红点，德国IF，美国IDEA等80
+                    <span style="font-size:12.6316px;white-space:normal;">余</span>项大奖。
+                </div></li>
+            <li class="l4">
+                <div class="pic">
+                    <div>
+                        <p></p>
+                    </div>
+                    <img src="#springUrl("/resources/images/b.png")" />
+                </div>
+                <div class="title">
+                    全案经验
+                </div>
+                <div class="cons">
+                    为客户提供从品牌策划、品牌设计、包装设计和品牌整合传播推广的全面解决方案。
+                </div></li>
+            <li class="l5">
+                <div class="pic">
+                    <div>
+                        <p></p>
+                    </div>
+                    <img src="#springUrl("/resources/images/b.png")" />
+                </div>
+                <div class="title">
+                    服务名企
+                </div>
+                <div class="cons">
+                    点创服务12大行业，从世界500强，到本土优秀企业，积累了丰富的实战经验....
+                </div></li>
+            <div class="clear"></div>
+        </ul>
+        <ul class="ul2">
+            <li class="l1">
+                <div class="pic">
+                    <img src="#springUrl("/resources/uploadfile/1498116403.jpg")" />
+                </div>
+                <div class="title">
+                    行业先锋
+                </div></li>
+            <li class="l2">
+                <div class="pic">
+                    <img src="#springUrl("/resources/uploadfile/1498116394.jpg")" />
+                </div>
+                <div class="title">
+                    媒体采访
+                </div></li>
+            <li class="l3">
+                <div class="pic">
+                    <img src="#springUrl("/resources/uploadfile/1498116386.jpg")" />
+                </div>
+                <div class="title">
+                    荣誉奖项
+                </div></li>
+            <li class="l4">
+                <div class="pic">
+                    <img src="#springUrl("/resources/uploadfile/1498116378.jpg")" />
+                </div>
+                <div class="title">
+                    精英团队
+                </div></li>
+            <li class="l5">
+                <div class="pic">
+                    <img src="#springUrl("/resources/uploadfile/1498116303.jpg")" />
+                </div>
+                <div class="title">
+                    国际交流
+                </div></li>
+            <div class="clear"></div>
+        </ul>
+        <ul class="ul3">
+            <li class="l1">
+                <div class="title">
+                    <span id="counter1">4</span>
+                    <font>+</font>
+                </div>
+                <div class="cons">
+                    二大
+                    <span style="white-space:normal;">中心</span>城市
+                </div></li>
+            <li class="l2">
+                <div class="title">
+                    <span id="counter2">10</span>
+                    <font>+</font>
+                </div>
+                <div class="cons">
+                    十年以上经验
+                </div></li>
+            <li class="l3">
+                <div class="title">
+                    <span id="counter3">12</span>
+                    <font>+</font>
+                </div>
+                <div class="cons">
+                    服务十二大行业
+                </div></li>
+            <li class="l4">
+                <div class="title">
+                    <span id="counter4">50</span>
+                    <font>+</font>
+                </div>
+                <div class="cons">
+                    几十名行业精英
+                </div></li>
+            <li class="l5">
+                <div class="title">
+                    <span id="counter5">500</span>
+                    <font>+</font>
+                </div>
+                <div class="cons">
+                    服务500强企业
+                </div></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+    <div class="wrap2 teamtotal">
+        <div class="msubejct">
+            <font>点创团队</font>=国内名校+海归精英
+        </div>
+        <div class="cons">
+            <img src="#springUrl("/resources/uploadfile/image/20170908/20170908203920_15009.jpg")" alt="" />
+        </div>
+    </div>
+    <div class="wrap pad1per">
+        <div class="team">
+            <div class="msubejct">
+                <font>核心</font>团队
+            </div>
+            <div class="t1">
+                <dl class="l1">
+                    <dt>
+                    <div class="pic">
+                        <img src="#springUrl("/resources/uploadfile/1500188161.png")" />
+                    </div>杜惜泽
+                    </dt>
+                    <dd>
+                        创始人/创意总监
+                        <br />
+                        北京大学新闻传播和行政管理学士学位，中国百强营销官团队成员，十年品牌策划、市
+                        场定位，创意营销，热点运作管理经验，给予品牌战略指导并解决实际商业问题。
+                        <br>
+                        服务客户：四季民福、嘉和一品、今麦郎、FANCL、京味斋、西少爷、百事可乐等。
+                        <br />
+                    </dd>
+                </dl>
+                <dl class="l2">
+                    <dt>
+                    <div class="pic">
+                        <img src="#springUrl("/resources/uploadfile/1500188131.png")" />
+                    </div>朱珠
+                    </dt>
+                    <dd>
+                        设计总监
+                        <br />
+                        复旦大学英语语言文学和广告传播学双学位，游学于多家世界500强企业。追求美的设计
+                        就如同追求美的生活。
+                        <br>
+                        服务客户：美国玛氏食品、绿箭口香糖、可口可乐、法国嘉人、香奈儿、selene等。
+                        <br />
+                    </dd>
+                </dl>
+            </div>
+            #*<div class="t1">
+                <dl class="l3">
+                    <dt>
+                    <div class="pic">
+                        <img src="" />
+                    </div>赵海洋
+                    </dt>
+                    <dd>
+                        品牌策划
+                        <br />
+                        河北北方学院市场管理学，品牌定位人、自由撰稿人、市场营销、媒体运维，最擅长
+                        将品牌与营销结合，带给顾客情切体验，通过专业认真的态度，实现顾客满意。
+                        <br>
+                        <br />
+                    </dd>
+                </dl>
+                <dl class="l4">
+                    <dt>
+                    <div class="pic">
+                        <img src=""/>
+                    </div>张钰堃
+                    </dt>
+                    <dd>
+                        资深设计师
+                        <br />
+                        山西国际商务职业学院视觉设计，尤趣儿媒体杂志视觉定位设计师，首先，必须满足
+                        企业自身理念传达的需求；其次，才是设计师展示自己高超设计的时候。
+                        <br>
+                        <br />
+                    </dd>
+                </dl>
+            </div>*#
+            #*<ul>
+                <li>
+                    <div class="pic">
+                        <img src="#springUrl("/resources/uploadfile/1500188161.png")" />
+                    </div>
+                    <div class="title">
+                        杜惜泽
+                    </div>
+                    <div class="cons">
+                        创始人/创意总监
+                    </div>
+                    <div class="cons">
+                        北京大学新闻传播和行政管理学士学位，中国百强营销官团队成员，十年品牌策划、市
+                        场定位，创意营销，热点运作管理经验，给予品牌战略指导并解决实际商业问题。
+                        <br>
+                        服务客户：四季民福、嘉和一品、今麦郎、FANCL、京味斋、西少爷、百事可乐等。
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <img src="#springUrl("/resources/uploadfile/1500188131.png")" />
+                    </div>
+                    <div class="title">
+                        朱珠
+                    </div>
+                    <div class="cons">
+                        设计总监
+                    </div>
+                    <div class="cons">
+                        复旦大学英语语言文学和广告传播学双学位，游学于多家世界500强企业。追求美的设计
+                        就如同追求美的生活。
+                        <br>
+                        服务客户：美国玛氏食品、绿箭口香糖、可口可乐、法国嘉人、香奈儿、selene等。
+                    </div>
+                </li>*#
+                #*<li>
+                    <div class="pic">
+                        <img src="#springUrl("/resources/uploadfile/1500188161.jpg")" />
+                    </div>
+                    <div class="title">
+                        丁伟
+                    </div>
+                    <div class="cons">
+                        创始人、董事长
+                    </div></li>
+                <li>
+                    <div class="pic">
+                        <img src="#springUrl("/resources/uploadfile/1500188131.jpg")" />
+                    </div>
+                    <div class="title">
+                        上官丕云
+                    </div>
+                    <div class="cons">
+                        创始人、品牌总监
+                    </div></li>
+                <li>
+                    <div class="pic">
+                        <img src="#springUrl("/resources/uploadfile/1503464299.jpg")" />
+                    </div>
+                    <div class="title">
+                        宗大鹏
+                    </div>
+                    <div class="cons">
+                        策略总监
+                    </div></li>
+                <li>
+                    <div class="pic">
+                        <img src="../uploadfile/1500187325.jpg" />
+                    </div>
+                    <div class="title">
+                        吴少楠
+                    </div>
+                    <div class="cons">
+                        创意总监
+                    </div></li>
+                <li class="no">
+                    <div class="pic">
+                        <img src="../uploadfile/1500187342.jpg" />
+                    </div>
+                    <div class="title">
+                        杨明芳
+                    </div>
+                    <div class="cons">
+                        项目总监
+                    </div></li>
+                <li>
+                    <div class="pic">
+                        <img src="../uploadfile/1502361884.jpg" />
+                    </div>
+                    <div class="title">
+                        王立涛
+                    </div>
+                    <div class="cons">
+                        创意总监
+                    </div></li>
+                <li>
+                    <div class="pic">
+                        <img src="../uploadfile/1500187378.jpg" />
+                    </div>
+                    <div class="title">
+                        王林
+                    </div>
+                    <div class="cons">
+                        项目总监
+                    </div></li>
+                <li>
+                    <div class="pic">
+                        <img src="../uploadfile/1500187405.jpg" />
+                    </div>
+                    <div class="title">
+                        李永泉
+                    </div>
+                    <div class="cons">
+                        策略总监
+                    </div></li>
+                <li>
+                    <div class="pic">
+                        <img src="../uploadfile/1500200105.jpg" />
+                    </div>
+                    <div class="title">
+                        郭泉
+                    </div>
+                    <div class="cons">
+                        设计总监
+                    </div></li>
+                <li class="no">
+                    <div class="pic">
+                        <img src="../uploadfile/1500187433.jpg" />
+                    </div>
+                    <div class="title">
+                        黄天
+                    </div>
+                    <div class="cons">
+                        创意总监
+                    </div></li>*#
+                <div class="clear"></div>
+            </ul>
+            <div class="msubejct teamsubject">
+                <font>点创</font>因你而精彩
+            </div>
+            <div class="teamtitle2">
+                专业点创人，正因为有了你们的努力，才有了各个项目的精彩...
+            </div>
+            <div class="teamcons">
+                <img src="/uploadfile/image/20170908/20170908203938_75618.jpg" alt="" />
+            </div>
+            <a href="career" class="joinusa">加入点创</a>
+        </div>
+    </div>
+</div>

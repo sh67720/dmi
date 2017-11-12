@@ -1,0 +1,81 @@
+#set($page_title="点创招聘")
+#set($home_class="")
+#set($works_class="")
+#set($about_class="")
+#set($career_class="check")
+#set($contact_class="")
+
+<div class="main">
+    <div class="wrap">
+        <div class="jobtitle">
+            #*招聘资深品牌设计师、客户经理*#
+        </div>
+        <div class="jobleft">
+            #*<ul>
+                <li>
+                    <div class="title">
+                        一、资深品牌设计师（上海/杭州）
+                    </div>
+                    <div class="cons">
+                        <p> <strong style="white-space:normal;"><br /> </strong> </p>
+                        <p> <strong style="white-space:normal;">工作内容：</strong> </p>
+                        <p> 1、品牌类：LOGO，VI设计； </p> 2、平面类：画册,平面物料
+                        <br />
+                        <br />
+                        <strong>岗位要求：</strong>
+                        <br /> 1、创意设计类专业毕业；
+                        <br /> 2、3-5年以上品牌设计工作经验；&nbsp;
+                        <br /> 3、精通AI、PS、等设计软件，设计执行力强，具有准确的视觉表达能力，
+                        <br /> 4、较好的审美情趣和创新能力；&nbsp;
+                        <br /> 5、工作细致、认真负责，开朗乐观，勇于接受挑战，
+                        <br />
+                        <br />
+                        <p> <br /> </p>
+                        <p> <strong>工作城市：</strong> </p>
+                        <p> 1<span style="white-space:normal;">、</span>上海市普陀区莫干山路50号（M50艺术园） </p>
+                        <p> 2<span style="white-space:normal;">、</span>杭州市江干区艮山西路102号（杭州创意设计中心） </p>
+                        <p> <br /> </p>
+                        <p> <span style="white-space:normal;"><strong style="white-space:normal;">应聘方式：</strong></span> </p>
+                        <p> <span style="white-space:normal;">请发代表作品至：shishubrand@foxmail.com &nbsp;</span> </p>
+                        <p> 请注明：应聘城市，薪资要求，到岗时间 </p>
+                        <p> <br /> </p>
+                        <p> <br /> </p>
+                        <p> <br /> </p>
+                    </div></li>
+                <li>
+                    <div class="title">
+                        二、项目经理 / 客户经理 （上海）
+                    </div>
+                    <div class="cons">
+                        工作内容：
+                        <br /> 1、前期：项目需求沟通,项目签约；&nbsp;
+                        <br /> 2、后期：项目具体的执行推进+项目问题反馈解决；
+                        <br />
+                        <br />
+                        <br /> 职位要求
+                        <br /> 1、有设计/咨询/广告公司，二年以上相关工作经验。
+                        <br /> 2、有项目管理和把控经验，能协助完成整个项目的策划、提案、推进。 &nbsp;
+                        <br /> 3、具有较强的时间管理能力、自律能力及良好的沟通技巧。&nbsp;
+                        <br /> 4、具备责任意识与服务意识，并具备良好的团队合作精神。&nbsp;
+                        <br />
+                        <p> 5、乐观，积极的生活态度，热爱设计策划行业。 </p>
+                        <p> <span style="white-space:normal;"><br /> </span> </p>
+                        <p> 应聘方式 </p>
+                        <p> 请发简历至：shishubrand@foxmail.com （注明到岗时间） </p>
+                        <p> <br /> </p>
+                        <p> <br /> </p>
+                        <p> </p>
+                        <div>
+                            <br />
+                        </div>
+                        <p></p>
+                    </div></li>
+            </ul>*#
+                <img src="#springUrl("/resources/images/job2.jpg")" />
+        </div>
+        <div class="jobright">
+            <img src="#springUrl("/resources/images/job1.jpg")" />
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

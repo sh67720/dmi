@@ -1,0 +1,87 @@
+#set($page_title="图片列表")
+#set($layout="/layout/layoutbackend.vm")
+
+<link rel="stylesheet" href="#springUrl("/resources/uploadfile/css/webuploader.css")" type="text/css">
+<link rel="stylesheet" href="#springUrl("/resources/uploadfile/css/diyUpload.css")" type="text/css">
+<script src="#springUrl("/resources/uploadfile/js/webuploader.html5only.min.js")"></script>
+<script src="#springUrl("/resources/uploadfile/js/diyUpload.js")"></script>
+
+<ol class="breadcrumb">
+    <li><a href="#springUrl("/works/list")">案例管理</a></li>
+    <li><a href="javascript:void(0);">图片列表</a></li>
+</ol>
+
+#*<div id="wrapper">
+    <div class="workslist_add">
+        <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/works/picadd?worksId=$worksId")">新增封面图片</a>
+        <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/works/picadd?worksId=$worksId")">新增详细图片</a>
+    </div>
+</div>*#
+<form id="worksPicPost" class="form-horizontal" action="#springUrl("/works/picadd?worksId=$!worksId&iscover=true")" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="code" class="col-sm-2 control-label">封面图片</label>
+        <div class="col-sm-3">
+            <input type="file" name="file"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-3">
+            #*<button type="button" class="btn btn-default prevPage">返回</button>*#
+            <input class="btn btn-success" type="submit" value="提交">
+        </div>
+    </div>
+</form>
+
+<form id="worksPicPost" class="form-horizontal" action="#springUrl("/works/picadd?worksId=$!worksId&iscover=false")" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="code" class="col-sm-2 control-label">详情图片</label>
+        <div class="col-sm-3">
+            <input type="file" name="file"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-3">
+        #*<button type="button" class="btn btn-default prevPage">返回</button>*#
+            <input class="btn btn-success" type="submit" value="提交">
+        </div>
+    </div>
+</form>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>图片</th>
+        <th>是否是封面</th>
+        <th>创建时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+        #foreach($worksPicture in $pageObj.result)
+        <tr>
+            <td>$!{velocityCount}</td>
+            <td>
+                <img src="#springUrl("$!{worksPicture.path}")" alt="#springUrl("$!{worksPicture.path}")" width="200px"/>
+            </td>
+            <td>
+                #if($!{worksPicture.iscover})是
+                    #else 否
+                #end
+            </td>
+            <td>
+                $!date.format('yyyy-MM-dd HH:mm:ss',$!{worksPicture.createTime})
+            </td>
+            <td>
+                <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/works/picdelete/$!{worksPicture.id}&$!{worksId}")" onclick="return confirm('确认要删除吗?')">删除</a>
+            </td>
+        </tr>
+        #end
+    </tbody>
+</table>
+
+
+
+

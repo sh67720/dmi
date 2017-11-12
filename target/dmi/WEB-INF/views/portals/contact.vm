@@ -1,0 +1,121 @@
+#set($page_title="联系点创")
+#set($home_class="")
+#set($works_class="")
+#set($about_class="")
+#set($career_class="")
+#set($contact_class="check")
+
+<div class="main">
+    <div class="wrap">
+        <ul class="contact">
+            <li class="l2">
+                <div class="pic">
+                    #*<img src="../uploadfile/1498198080.jpg" />*#
+                </div>
+                <div class="title">
+                    北京
+                </div>
+                <div class="title2">
+                    Beijing
+                </div>
+                <div class="cons">
+                    顺义区南法信镇金穗路2号院5号楼9层901室
+                    <br />
+                </div></li>
+            <li class="l1">
+                <div class="pic">
+                    #*<img src="../uploadfile/1498198119.jpg" />*#
+                </div>
+                <div class="title">
+                    上海
+                    #*<span>（总部）</span>*#
+                </div>
+                <div class="title2">
+                    Shanghai
+                </div>
+                <div class="cons">
+                    徐汇区凌云路388号
+                    <br />
+                    <br />
+                </div></li>
+            #*<li class="l3">
+                <div class="pic">
+                    <img src="../uploadfile/1498198039.jpg" />
+                </div>
+                <div class="title">
+                    深圳
+                </div>
+                <div class="title2">
+                    Shenzhen
+                </div>
+                <div class="cons">
+                    南山区松白路1051号3栋301室
+                    <br /> (百旺创意工厂)
+                </div></li>
+            <li class="l4">
+                <div class="pic">
+                    <img src="../uploadfile/1498197999.jpg" />
+                </div>
+                <div class="title">
+                    杭州
+                </div>
+                <div class="title2">
+                    Hangzhou
+                </div>
+                <div class="cons">
+                    江干区艮山西路102号B幢2078室
+                    <br /> (杭州创意设计中心)
+                </div></li>*#
+            <div class="clear"></div>
+        </ul>
+        <div class="contacttel">
+            全国统一咨询电话：186-1099-8268
+        </div>
+        <div class="contactleft">
+            <div class="list">
+                <i class="email"></i>
+                <a href="mailto:duxize1211@163.com">duxize1211@163.com</a>
+            </div>
+            <div class="list">
+                <i class="qq"></i>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=782801963&amp;site=&amp;menu=yes" target="_blank">QQ在线咨询: 782801963</a>
+            </div>
+            <div class="list">
+                <i class="www"></i>
+                <a href="#springUrl("")">www.shdmi.cn</a>
+            </div>
+            <div class="list listjoin">
+                <i class="join"></i>JOIN US
+            </div>
+            <div class="cons">
+                If you’d consider joining us on our journey to create the brilliantly designed and beautifully connected brands of the future, please get in touch.
+                <a href="career" class="job">招聘职位信息</a>
+            </div>
+            <div class=""></div>
+        </div>
+        <form id="clientAddForm" action="#springUrl("/portals/contact")" method="post">
+            <div class="contactright">
+                <div class="message">
+                    <p>公司名称</p>
+                    <input type="text" name="clientCompanyName" id="mcompany" />
+                    <br />
+                    <p>您的姓名</p>
+                    <input type="text" name="clientName" id="mname" />
+                    <br />
+                    <p>联系电话</p>
+                    <input type="text" name="clientTel" id="mtel" />
+                    <br />
+                    <p>所在城市</p>
+                    <input type="text" name="clientCity" id="mcity" />
+                    <br />
+                    <p>项目需求</p>
+                    <textarea name="requirement" id="mcons" cols="45" rows="5"></textarea>
+                    <br />
+                    <input type="submit" name="mbtn" id="mbtn" value="提交需求" onclick="return contact_commit()"/>
+                </div>
+            </div>
+        </form>
+        <div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript" src="#springUrl("/resources/js/portals/addContact.js")"></script>
