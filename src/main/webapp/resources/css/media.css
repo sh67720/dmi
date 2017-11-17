@@ -11,11 +11,11 @@
 .wrap {max-width:100%;padding:0 3%}
 .index-sildebox .bd li,.index-sildebox .hd ul li .li{ background-size:cover;}
 .index-sildebox,.index-sildebox .bd li { height:500px}
-.index-sildebox .hd{bottom:-70px;}
-.index-sildebox .hd ul{height:50px; padding:10px 0;}
-.index-sildebox .hd ul li{width:107px;height:50px; }
+.index-sildebox .hd{bottom:-136px;}
+.index-sildebox .hd ul{height:110px; padding:10px 0;}
+.index-sildebox .hd ul li{width:103px;height:100px; }
 
-.about {padding-top:50px}
+.about {padding-top:100px}
 .about .subject {margin-top:70px;font-size:40px; line-height:60px}
 .about li {width:16%;margin-right:5%;}
 .about li.l5 {margin-right:0}
@@ -144,7 +144,7 @@ html{line-height:22px;font-size:13px;}
 
 .index-sildebox,.index-sildebox .bd li { height:400px}
 
-.about {padding-top:30px}
+.about {padding-top:70px}
 .about .subject {margin-top:70px;font-size:20px; line-height:20px; height:30px;margin-bottom:30px}
 .about .ul1 li .pic div p {margin:-30px 0 0 -30px;width:60px; height:60px;}
 .about .ul1 li:hover .pic div p { background-position:0 -60px;}
@@ -278,9 +278,9 @@ html{line-height:22px;font-size:13px;}
 @media (max-width:768px) {
 .flexslider,.slides li,.slides li a{height:200px;}
 .about .subject {margin-top:50px}
-.index-sildebox .hd{bottom:-50px;}
-.index-sildebox .hd ul{height:30px; padding:10px 0;}
-.index-sildebox .hd ul li{width:64px;height:30px; }
+.index-sildebox .hd{bottom:-76px;}
+.index-sildebox .hd ul{height:58px; padding:10px 0;}
+.index-sildebox .hd ul li{width:60px;height:58px; }
 .index-sildebox,.index-sildebox .bd li { height:300px}
 
 .indcase li {width:50%;}
@@ -384,9 +384,9 @@ html{line-height:22px;font-size:13px;}
 
 @media (max-width:480px) {
 .flexslider,.slides li,.slides li a{height:120px;}
-.index-sildebox .hd{bottom:-45px;}
-.index-sildebox .hd ul{height:25px; padding:10px 0;}
-.index-sildebox .hd ul li{width:53px;height:25px; }
+.index-sildebox .hd{bottom:-65px;}
+.index-sildebox .hd ul{height:51px; padding:10px 0;}
+.index-sildebox .hd ul li{width:53px;height:51px; }
 .index-sildebox,.index-sildebox .bd li { height:200px}
 .liuyan .message input[type="text"] {width:76%}
 .liuyan .message #mcons {width:76%}

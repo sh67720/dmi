@@ -449,8 +449,7 @@
 </div>
 <div class="wrap pad1per">
     <div class="msubejct">
-        行业大牌选择与
-        <font>点创</font>一起创新
+        行业大牌选择与<font>点创</font>一起创新
     </div>
     <ul class="custom">
         <li>
@@ -498,36 +497,35 @@
 </div>
 <div class="wrap">
     <div class="msubejct msubejctpro">
-        点创动态
-        <font>与</font>行业资讯
+        点创动态<font>与</font>行业资讯
     </div>
     <ul class="indnews">
         <li>
             <div class="pic">
-                <a href="nshow/402.html"><img src="#springUrl("/resources/uploadfile/1500199160.jpg")" /></a>
+                <a href="#"><img src="#springUrl("/resources/uploadfile/1500199160.jpg")" /></a>
             </div>
             <div class="title">
-                <a href="nshow/402.html">行业资讯 | OFO启用中文名小黄车,同时LOGO进行了微调</a>
+                <a href="#">行业资讯 | OFO启用中文名小黄车,同时LOGO进行了微调</a>
             </div>
             <div class="addtime">
                 2017-07-16
             </div></li>
         <li>
             <div class="pic">
-                <a href="nshow/405.html"><img src="#springUrl("/resources/uploadfile/1500199210.jpg")" /></a>
+                <a href="#"><img src="#springUrl("/resources/uploadfile/1500199210.jpg")" /></a>
             </div>
             <div class="title">
-                <a href="nshow/405.html">行业资讯 | 阿里菜鸟流物启用全新LOGO形象</a>
+                <a href="#">行业资讯 | 阿里菜鸟流物启用全新LOGO形象</a>
             </div>
             <div class="addtime">
                 2017-07-16
             </div></li>
         <li class="no">
             <div class="pic">
-                <a href="nshow/406.html"><img src="#springUrl("/resources/uploadfile/1500199218.jpg")" /></a>
+                <a href="#"><img src="#springUrl("/resources/uploadfile/1500199218.jpg")" /></a>
             </div>
             <div class="title">
-                <a href="nshow/406.html">行业资讯 | 雀巢茶品NESTEA推出全新LOGO和包装</a>
+                <a href="#">行业资讯 | 雀巢茶品NESTEA推出全新LOGO和包装</a>
             </div>
             <div class="addtime">
                 2017-07-16
