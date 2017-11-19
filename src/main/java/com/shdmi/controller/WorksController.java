@@ -3,15 +3,8 @@ package com.shdmi.controller;
 import com.shdmi.entity.*;
 import com.shdmi.enums.CategoryType;
 import com.shdmi.enums.IndustryType;
-import com.shdmi.enums.ProjectBottomTag;
-import com.shdmi.enums.ProjectTopTag;
-import com.shdmi.service.PortalsService;
 import com.shdmi.service.WorksService;
-import com.shdmi.utils.MD5Util;
-import com.shdmi.utils.Page;
-import com.shdmi.utils.ParamKey;
-import com.shdmi.utils.QueryBuilder;
-import org.apache.commons.lang3.StringUtils;
+import com.shdmi.utils.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,10 +18,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -114,7 +103,7 @@ public class WorksController extends BaseController{
         if(list != null&&list.size() > 0){
             for(WorksPicture worksPicture:list) {
                 worksService.picDelete(worksPicture.getId());
-                deleteFile(request, worksPicture.getPath());
+                UploadFileUtils.deleteFile(request, worksPicture.getPath());
             }
         }
         addDeleteSuccessMessage(redirectAttributes);
@@ -122,7 +111,7 @@ public class WorksController extends BaseController{
     }
 
     @RequestMapping(value = "/picadd", method = RequestMethod.POST)
-    public String add(Model model, HttpServletRequest request, @RequestParam("file") MultipartFile[] files)
+    public String add(Model model, HttpServletRequest request, @RequestParam("file") MultipartFile[] files, RedirectAttributes redirectAttributes)
             throws Exception {
         String worksIdString = request.getParameter("worksId");
         int worksId = Integer.parseInt(worksIdString);
@@ -130,7 +119,12 @@ public class WorksController extends BaseController{
         String iscoverString = request.getParameter("iscover");
         boolean iscover = Boolean.parseBoolean(iscoverString);
 
-        List<String> list = savePicture(request, files);
+        if(files == null||files.length <= 0) {
+            addRedirectError(redirectAttributes,"请选择图片");
+            return getRedirectUrl(WORKS_PICLIST + "?worksId=" + worksId);
+        }
+
+        List<String> list = UploadFileUtils.savePicture(request, files);
         if(list == null||list.size() <=0){
             return "文件为空";
         }
@@ -172,64 +166,11 @@ public class WorksController extends BaseController{
         worksService.picDelete(id);
         if(list != null&&list.size() > 0){
             for(WorksPicture worksPicture:list) {
-                deleteFile(request, worksPicture.getPath());
+                UploadFileUtils.deleteFile(request, worksPicture.getPath());
             }
         }
         addDeleteSuccessMessage(redirectAttributes);
         return getRedirectUrl(WORKS_PICLIST + "?worksId=" + worksId);
     }
 
-    public List<String> savePicture(HttpServletRequest request, MultipartFile[] files){
-        List<String> names = null;
-        //判断file数组不能为空并且长度大于0
-        if(files != null && files.length > 0){
-            String date = new SimpleDateFormat("yyyyMMdd").format(new Date());
-            names = new ArrayList<>();
-            //循环获取file数组中得文件
-            for(int i = 0;i<files.length;i++){
-                MultipartFile file = files[i];
-                //保存文件
-                String name = saveFile(request, file, date);
-                if (StringUtils.isNotEmpty(name))
-                    names.add(name);
-            }
-        }
-        return names;
-    }
-
-    private String saveFile(HttpServletRequest request, MultipartFile file, String date) {
-        // 判断文件是否为空
-        if (!file.isEmpty()) {
-            try {
-                String name = file.getOriginalFilename();
-                // 文件保存路径
-                String rootPath = request.getSession().getServletContext().getRealPath("/");
-                String filePath = "/upload/" + date + "/" + System.nanoTime() + name.substring(name.lastIndexOf("."));
-                File fileTo = new File(rootPath + filePath);
-                if (!fileTo.getParentFile().exists())
-                    fileTo.mkdirs();
-                // 转存文件
-                file.transferTo(fileTo);
-                return filePath;
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return null;
-    }
-
-    private void deleteFile(HttpServletRequest request, String path){
-        String rootPath = request.getSession().getServletContext().getRealPath("/");
-        File file = new File(rootPath + path);
-        // 如果文件路径所对应的文件存在，并且是一个文件，则直接删除
-        if (file.exists() && file.isFile()) {
-            if (file.delete()) {
-                System.out.println("删除单个文件" + rootPath+path + "成功！");
-            } else {
-                System.out.println("删除单个文件" + rootPath+path + "失败！");
-            }
-        } else {
-            System.out.println("删除单个文件失败：" + rootPath+path + "不存在！");
-        }
-    }
 }

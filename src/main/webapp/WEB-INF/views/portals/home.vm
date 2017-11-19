@@ -444,7 +444,7 @@
         <font>点创团队</font>=国内名校+海归精英
     </div>
     <div class="cons">
-        <a href="about/"><img src="#springUrl("/resources/uploadfile/image/20170908/20170908203920_15009.jpg")" alt="" /></a>
+        <a href="about"><img src="#springUrl("/resources/uploadfile/image/20170908/20170908203920_15009.jpg")" alt="" /></a>
     </div>
 </div>
 <div class="wrap pad1per">
@@ -452,7 +452,20 @@
         行业大牌选择与<font>点创</font>一起创新
     </div>
     <ul class="custom">
-        <li>
+        #foreach($cooperatem in $cooperatems)
+            #if($!{velocityCount}%5 != 0)
+                <li>
+                    <div class="pic">
+                        <a href="javascript:;"><img src="#springUrl("$cooperatem.path")" /></a>
+                    </div></li>
+            #else
+                <li class="no">
+                    <div class="pic">
+                        <a href="javascript:;"><img src="#springUrl("$cooperatem.path")" /></a>
+                    </div></li>
+            #end
+        #end
+        #*<li>
             <div class="pic">
                 <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1498192650.jpg")" /></a>
             </div></li>
@@ -491,7 +504,7 @@
         <li class="no">
             <div class="pic">
                 <a href="javascript:;"><img src="#springUrl("/resources/uploadfile/1499665847.jpg")" /></a>
-            </div></li>
+            </div></li>*#
         <div class="clear"></div>
     </ul>
 </div>
@@ -500,7 +513,32 @@
         点创动态<font>与</font>行业资讯
     </div>
     <ul class="indnews">
-        <li>
+        #foreach($item in $industryinformations)
+            #if($!{velocityCount}%3 != 0)
+                <li>
+                    <div class="pic">
+                        <a href="#springUrl("/portals/industryinformation/$!item.id")"><img src="#springUrl("$item.coverpic")" /></a>
+                    </div>
+                    <div class="title">
+                        <a href="#springUrl("/portals/industryinformation/$!item.id")">行业资讯 | $item.name</a>
+                    </div>
+                    <div class="addtime">
+                        $item.date
+                    </div></li>
+            #else
+                <li class="no">
+                    <div class="pic">
+                        <a href="#springUrl("/portals/industryinformation/$!item.id")"><img src="#springUrl("$item.coverpic")" /></a>
+                    </div>
+                    <div class="title">
+                        <a href="#springUrl("/portals/industryinformation/$!item.id")">行业资讯 | $item.name</a>
+                    </div>
+                    <div class="addtime">
+                        $item.date
+                    </div></li>
+            #end
+        #end
+        #*<li>
             <div class="pic">
                 <a href="#"><img src="#springUrl("/resources/uploadfile/1500199160.jpg")" /></a>
             </div>
@@ -529,7 +567,7 @@
             </div>
             <div class="addtime">
                 2017-07-16
-            </div></li>
+            </div></li>*#
         <div class="clear"></div>
     </ul>
 </div>

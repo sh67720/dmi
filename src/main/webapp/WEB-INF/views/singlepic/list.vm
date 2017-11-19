@@ -1,0 +1,111 @@
+#set($page_title="图片管理")
+#set($layout="/layout/layoutbackend.vm")
+
+<link rel="stylesheet" href="#springUrl("/resources/uploadfile/css/webuploader.css")" type="text/css">
+<link rel="stylesheet" href="#springUrl("/resources/uploadfile/css/diyUpload.css")" type="text/css">
+<script src="#springUrl("/resources/uploadfile/js/webuploader.html5only.min.js")"></script>
+<script src="#springUrl("/resources/uploadfile/js/diyUpload.js")"></script>
+
+<ol class="breadcrumb">
+    <li><a href="#springUrl("/singlepic/list")">图片管理</a></li>
+    <li><a href="javascript:void(0);">图片列表</a></li>
+</ol>
+
+<form id="worksPicPost" class="form-horizontal" action="#springUrl("/singlepic/add")" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="code" class="col-sm-2 control-label">图片</label>
+        <div class="col-sm-3">
+            <input type="file" name="file"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">类别</label>
+        <div class="col-sm-5">
+            <select id="singlePicType" name="singlePicType" class="selectpicker show-tick" data-size="10" itemLabel="value" itemValue="key" myValue="$singlePicType">
+                <option value="">请选择类别</option>
+                #foreach($item in $singlePicType)
+                    <option value="$item.code">$item.name</option>
+                #end
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">tips</label>
+        <div class="col-sm-5">
+            <div class="tips">建议尺寸250*120</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-3">
+        #*<button type="button" class="btn btn-default prevPage">返回</button>*#
+            <input class="btn btn-success" type="submit" value="提交">
+        </div>
+    </div>
+</form>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>图片</th>
+        <th>图片类型</th>
+        <th>创建时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+        #foreach($singlePic in $pageObj.result)
+        <tr>
+            <td>$!{velocityCount}</td>
+            <td>
+                <img src="#springUrl("$!{singlePic.path}")" alt="#springUrl("$!{singlePic.path}")" width="200px"/>
+            </td>
+            #foreach($item in $singlePicType)
+                #if($singlePic.type == $item.code)
+                    #set($tem = $item.name)
+                    <td>$tem</td>
+                #end
+            #end
+            <td>
+                $!date.format('yyyy-MM-dd HH:mm:ss',$!{singlePic.createTime})
+            </td>
+            <td>
+                <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/singlepic/delete/$!{singlePic.id}")" onclick="return confirm('确认要删除吗?')">删除</a>
+            </td>
+        </tr>
+        #end
+    </tbody>
+</table>
+#pager("${rc.contextPath}$pageSkipUrl", $pageObj)
+
+#*<script language="javascript" type="text/javascript">
+    $(document).ready(function(){
+        $('#singlePicType').change(function() {
+            var p1 = $(this).children('option:selected').val();//这就是selected的值
+            var velues = $(this).attr("myValue");
+            /*for(var i=0;i<velues.length;i++){
+                alert(velues[i]);
+                /!*$(".tips").append(name[i].tips);
+                if(p1 == velues[i].code){
+                    $(".tips").html(velues[i].tips);
+                }*!/
+            }*/
+            alert("Array"+velues.Array([])); // true
+            alert("Date"+velues.Date(new Date)); // true
+            alert("RegExp"+velues.RegExp(/reg/ig)); // true
+            /*$(".tips").html(velues);*/
+            /*$.each(velues,function(n,value) {
+                alert(value);
+            });*/
+            /*$.each(velues,function(n,value) {
+                $(".tips").html(n+' '+value);
+            });*/
+        });
+    });
+</script>*#
+
+
+

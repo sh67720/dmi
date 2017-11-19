@@ -1,0 +1,77 @@
+#set($page_title="行业资讯")
+#set($home_class="")
+#set($works_class="")
+#set($about_class="")
+#set($career_class="")
+#set($contact_class="")
+
+<div class="main">
+    <div class="wrap">
+        <div class="newsleft">
+            <div class="title">
+                $industryinformation.name
+            </div>
+            <div class="addtime">
+                行业资讯 | $industryinformation.date
+            </div>
+            <div class="cons">
+                #foreach($item in $industryinformationPics)
+                    <img src="#springUrl("$item.path")" alt="" />
+                #end
+                #*<img src="/uploadfile/image/20170727/20170727115220_12054.jpg" alt="" />
+                <img src="/uploadfile/image/20170727/20170727115221_70965.jpg" alt="" />
+                <img src="/uploadfile/image/20170727/20170727115221_55906.jpg" alt="" />
+                <img src="/uploadfile/image/20170727/20170727115221_16138.jpg" alt="" />
+                <img src="/uploadfile/image/20170727/20170727115221_78796.jpg" alt="" />*#
+            </div>
+        </div>
+        <div class="newsright">
+            <ul class="indnews">
+                #foreach($item in $industryinformationsOther)
+                    <li>
+                        <div class="pic">
+                            <a href="#springUrl("/portals/industryinformation/$!item.id")"><img src="#springUrl("$item.coverpic")" /></a>
+                        </div>
+                        <div class="title">
+                            <a href="#springUrl("/portals/industryinformation/$!item.id")">$item.name</a>
+                        </div>
+                        <div class="addtime">
+                            行业资讯 | $item.updateTime
+                        </div></li>
+                #end
+                #*<li>
+                    <div class="pic">
+                        <a href="../nshow/405.html"><img src="../uploadfile/1500199210.jpg" /></a>
+                    </div>
+                    <div class="title">
+                        <a href="../nshow/405.html">阿里菜鸟流物启用全新LOGO形象</a>
+                    </div>
+                    <div class="addtime">
+                        行业资讯 | 2017-07-16
+                    </div></li>
+                <li>
+                    <div class="pic">
+                        <a href="../nshow/406.html"><img src="../uploadfile/1500199218.jpg" /></a>
+                    </div>
+                    <div class="title">
+                        <a href="../nshow/406.html">雀巢茶品NESTEA推出全新LOGO和包装</a>
+                    </div>
+                    <div class="addtime">
+                        行业资讯 | 2017-07-16
+                    </div></li>
+                <li>
+                    <div class="pic">
+                        <a href="../nshow/400.html"><img src="../uploadfile/1500199122.jpg" /></a>
+                    </div>
+                    <div class="title">
+                        <a href="../nshow/400.html">欧宝汽车对品牌LOGO进行扁平化设计升级</a>
+                    </div>
+                    <div class="addtime">
+                        行业资讯 | 2017-07-16
+                    </div></li>
+                <div class="clear"></div>*#
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

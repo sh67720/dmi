@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shdmi.dao.IndustryinformationMapper">
+    <!--资讯-->
+    <insert id="add" parameterType="com.shdmi.entity.Industryinformation">
+        INSERT INTO industryinformation(coverpic, `name`, `date`, createTime, updateTime)
+        VALUES (#{coverpic}, #{name}, #{date}, now(), now());
+    </insert>
+
+    <update id="update" parameterType="com.shdmi.entity.Industryinformation">
+        UPDATE industryinformation SET coverpic = #{coverpic}, `name` = #{name}, `date` = #{date}, updateTime = now() WHERE id = #{id};
+    </update>
+
+    <delete id="delete">
+        DELETE FROM industryinformation WHERE id = #{id}
+    </delete>
+
+    <select id="count" resultType="java.lang.Integer">
+        SELECT count(*) FROM industryinformation WHERE 1=1
+    </select>
+
+    <select id="findList" resultType="com.shdmi.entity.Industryinformation">
+        SELECT * FROM industryinformation WHERE 1=1
+        ORDER BY updateTime ASC limit #{index},#{pageSize};
+    </select>
+
+    <select id="seleceIndustryinformationById" resultType="com.shdmi.entity.Industryinformation">
+        SELECT * FROM industryinformation WHERE id = #{id}
+    </select>
+
+    <!--资讯图片-->
+    <insert id="picadd" parameterType="com.shdmi.entity.Industryinformation">
+        INSERT INTO industryinformationpicture(industryinformationId, path, createTime, updateTime)
+        VALUES (#{industryinformationId}, #{path}, now(), now());
+    </insert>
+
+    <delete id="deletePic">
+        DELETE FROM industryinformationpicture WHERE id = #{id}
+    </delete>
+
+    <select id="piccount" resultType="java.lang.Integer">
+        SELECT count(*) FROM industryinformationpicture WHERE 1=1
+        <if test="industryinformationId != 0">
+            AND industryinformationId = #{industryinformationId}
+        </if>
+    </select>
+
+    <select id="picfindList" resultType="com.shdmi.entity.Industryinformation">
+        SELECT * FROM industryinformationpicture WHERE 1=1
+        <if test="industryinformationId != 0">
+            AND industryinformationId = #{industryinformationId}
+        </if>
+        ORDER BY createTime DESC limit #{index},#{pageSize};
+    </select>
+
+    <select id="selecePicById" resultType="com.shdmi.entity.Industryinformation">
+        SELECT * FROM industryinformationpicture WHERE 1=1
+        <if test="id != 0">
+            AND id = #{id}
+        </if>
+    </select>
+
+    <select id="selecePicByIndustryinformationId" resultType="com.shdmi.entity.Industryinformation">
+        SELECT * FROM industryinformationpicture WHERE 1=1
+        <if test="industryinformationId != 0">
+            AND industryinformationId = #{industryinformationId}
+        </if>
+    </select>
+</mapper>

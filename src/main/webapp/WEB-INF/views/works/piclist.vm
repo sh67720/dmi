@@ -19,7 +19,7 @@
 </div>*#
 <form id="worksPicPost" class="form-horizontal" action="#springUrl("/works/picadd?worksId=$!worksId&iscover=true")" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="code" class="col-sm-2 control-label">封面图片</label>
+        <label for="code" class="col-sm-2 control-label">封面图片（建议尺寸600*500）</label>
         <div class="col-sm-3">
             <input type="file" name="file"/>
         </div>
@@ -35,7 +35,7 @@
 
 <form id="worksPicPost" class="form-horizontal" action="#springUrl("/works/picadd?worksId=$!worksId&iscover=false")" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="code" class="col-sm-2 control-label">详情图片</label>
+        <label for="code" class="col-sm-2 control-label">详情图片（建议尺寸1800*1000）</label>
         <div class="col-sm-3">
             <input type="file" name="file"/>
         </div>

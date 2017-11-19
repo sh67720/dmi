@@ -389,7 +389,7 @@
                 专业点创人，正因为有了你们的努力，才有了各个项目的精彩...
             </div>
             <div class="teamcons">
-                <img src="/uploadfile/image/20170908/20170908203938_75618.jpg" alt="" />
+                <img src="#springUrl("/resources/uploadfile/image/20170908/20170908203938_75618.jpg")" alt="" />
             </div>
             <a href="career" class="joinusa">加入点创</a>
         </div>

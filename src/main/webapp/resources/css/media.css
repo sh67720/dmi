@@ -296,7 +296,9 @@ html{line-height:22px;font-size:13px;}
 .jobleft li {margin-bottom:30px;}
 .jobleft .title {font-size:14px;margin:0 0 10px 0;}
 .jobright {width:100%;margin-top:-10px}
-.fixright { display:none;}
+.fixright { position:fixed; z-index:9999;right:10px;bottom:8px;background-color: orange;padding:5px 15px;}
+.fixright a { display:block;margin:5px 0;}
+.fixright a font {font-size: 10px;color: white}
 
 
 .foot .threeqq {text-align:center; height:auto;}

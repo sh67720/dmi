@@ -1,9 +1,6 @@
 package com.shdmi.dao;
 
-import com.shdmi.entity.Apply;
-import com.shdmi.entity.Client;
-import com.shdmi.entity.Works;
-import com.shdmi.entity.WorksPicture;
+import com.shdmi.entity.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -28,4 +25,12 @@ public interface PortalsMapper {
     List<WorksPicture> selectworkspic(@Param("workcaseId") int workcaseId);
 
     List<WorksPicture> selectworkscoverpic(@Param("workcaseId") int workcaseId);
+
+    List<SinglePic> selectPicByType(@Param("type") int type);
+
+    List<Industryinformation> selectIndustryinformations(@Param("size") int size);
+
+    Industryinformation selectIndustryinformationById(@Param("id") int id);
+
+    List<Industryinformation> selectPicByInformationId(@Param("industryinformationId") int industryinformationId);
 }

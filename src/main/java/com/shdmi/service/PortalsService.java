@@ -60,4 +60,24 @@ public class PortalsService {
         List<WorksPicture> worksPictures = portalsMapper.selectworkscoverpic(workcaseId);
         return worksPictures;
     }
+
+    public List<SinglePic> selectPicByType(int type) {
+        List<SinglePic> singlePics = portalsMapper.selectPicByType(type);
+        return singlePics;
+    }
+
+    public List<Industryinformation> selectIndustryinformations(int size) {
+        List<Industryinformation> industryinformations = portalsMapper.selectIndustryinformations(size);
+        return industryinformations;
+    }
+
+    public Industryinformation selectIndustryinformationById(int id) {
+        Industryinformation industryinformation = portalsMapper.selectIndustryinformationById(id);
+        return industryinformation;
+    }
+
+    public List<Industryinformation> selectPicByInformationId(int industryinformationId) {
+        List<Industryinformation> industryinformations = portalsMapper.selectPicByInformationId(industryinformationId);
+        return industryinformations;
+    }
 }
