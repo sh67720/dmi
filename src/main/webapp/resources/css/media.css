@@ -123,11 +123,11 @@
 .flexslider,.slides li,.slides li a{height:250px;}
 .about .subject,.about .ul1 li .title,.about .ul3 .title,.about .ul3 .cons,.msubejct,.indnews li .title a,.indnews li .addtime,.contact li .title,.contact li .title2,.contacttel,.contactleft .cons {font-family:'';}
 html{line-height:22px;font-size:13px;}
-.navmenu,.particulars-nav-fixed.actives .navmenu { height:50px; overflow:visible}
+.navmenu,.particulars-nav-fixed.actives .navmenu { height:80px; overflow:visible}
 .mobmenu { display:block}
-.navmenu .logo {height:30px;margin-top:8px}
-.navmenu .logo h1 img { height:25px;}
-.navmenu .logo h2 img { height:20px;}
+.navmenu .logo {height:780px;margin-top:8px}
+.navmenu .logo h1 img { height:70px;}
+.navmenu .logo h2 img { height:70px;}
 .navmenu .logo h2 { margin:4px 0 0 6px}
 .mobopen { display:block; background:url(../images/mobmenu.png) no-repeat;width:23px; height:18px; position:absolute; z-index:1;right:3%;top:16px}
 .mobclose { background:url(../images/close.png) no-repeat;width:30px; height:30px; background-size:100%; position:absolute; z-index:99999;right:20px;top:20px; display:block;display:none;}

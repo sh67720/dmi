@@ -60,11 +60,11 @@ hr {border:0;border-top:1px solid #ccc; height:1px;margin-top:5px}
 .relative { position:relative;}
 .mobmenu { display:none;}
 
-.navmenu { height:150px; background:#fff; position:fixed; z-index:9999;top:0;width:100%;left:0;box-shadow:0 0 5px #ccc; overflow:hidden}
-.navmenu .logo {float:left; display:block;margin-top:15px}
+.navmenu { height:200px; background:#fff; position:fixed; z-index:9999;top:0;width:100%;left:0;box-shadow:0 0 5px #ccc; overflow:hidden}
+.navmenu .logo {float:left; display:block;margin-top:0px;margin-bottom: 15px;margin-left: 40px}
 .navmenu .logo h1 { display:inline-block; vertical-align:top}
-.navmenu .logo h2 { display:inline-block; vertical-align:top;margin:5px 0 0 15px}
-.navmenu ul {float:left; height:30px; line-height:30px;margin-top:20px; clear:left}
+.navmenu .logo h2 { display:inline-block; vertical-align:top;margin:20px 0 0 45px}
+.navmenu ul {float:right; height:30px; line-height:30px;margin-top:40px;text-align:right}
 .navmenu ul li { display:inline-block; vertical-align:top;margin-right:35px; position:relative; text-align:center}
 .navmenu ul li a{font-size:20px;color:#777;font-family:hum521n,'Microsoft YaHei','微软雅黑',arial;}
 .navmenu ul li a:hover,.navmenu ul li.check a {color:#000}
@@ -75,11 +75,11 @@ hr {border:0;border-top:1px solid #ccc; height:1px;margin-top:5px}
 .particulars-nav-fixed.actives .navmenu { height:0;}
 .navmenu .sercate {float:right;margin-top:30px; text-align:right}
 .navmenu .sercate a {font-size:16px;margin-left:25px}
-.telqq {float:right; text-align:right;margin-top:15px}
+.telqq {float:right; text-align:right;margin-top:60px;margin-right: 100px}
 .telqq p { display:inline-block; vertical-align:middle;font-size:18px;}
 .telqq p span { display:inline-block; vertical-align:middle;margin-right:5px;margin-top:7px}
 .telqq a { display:inline-block; vertical-align:middle;margin-left:15px}
-.telqq img { height:23px;}
+.telqq img { height:50px;}
 
 
 .index-sildebox{width:100%;height:666px; position:relative;margin-top:125px;}
