@@ -55,7 +55,7 @@ public class UploadFileUtils {
         return null;
     }
 
-    public static void deleteFile(HttpServletRequest request, String path){
+    public static boolean deleteFile(HttpServletRequest request, String path){
         String rootPath = request.getSession().getServletContext().getRealPath("/");
         File file = new File(rootPath + path);
         // 如果文件路径所对应的文件存在，并且是一个文件，则直接删除
@@ -63,13 +63,16 @@ public class UploadFileUtils {
             if (file.delete()) {
                 System.out.println("删除单个文件" + rootPath+path + "成功！");
                 Logger.getLogger("删除单个文件" + rootPath+path + "成功！");
+                return true;
             } else {
                 System.out.println("删除单个文件" + rootPath+path + "失败！");
-                Logger.getLogger("删除单个文件" + rootPath+path + "成功！");
+                Logger.getLogger("删除单个文件" + rootPath+path + "失败！");
+                return false;
             }
         } else {
             System.out.println("删除单个文件失败：" + rootPath+path + "不存在！");
-            Logger.getLogger("删除单个文件" + rootPath+path + "成功！");
+            Logger.getLogger("删除单个文件" + rootPath+path + "不存在！");
+            return false;
         }
     }
 }

@@ -45,9 +45,9 @@
                             <div class="title">
                                 <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank">$works.name</a>
                             </div>
-                            <div class="title2">
+                            #*<div class="title2">
                                 $works.serviceContent
-                            </div>
+                            </div>*#
                         </div></li>
                  #else
                     <li class="no">
@@ -65,9 +65,9 @@
                             <div class="title">
                                 <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank">$works.name</a>
                             </div>
-                            <div class="title2">
+                            #*<div class="title2">
                                 $works.serviceContent
-                            </div>
+                            </div>*#
                         </div></li>
                 #end
             #end
