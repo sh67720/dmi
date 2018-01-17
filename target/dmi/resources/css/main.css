@@ -61,40 +61,41 @@ hr {border:0;border-top:1px solid #ccc; height:1px;margin-top:5px}
 .mobmenu { display:none;}
 
 .navmenu { height:150px; background:#fff; position:fixed; z-index:9999;top:0;width:100%;left:0;box-shadow:0 0 5px #ccc; overflow:hidden}
-.navmenu .logo {float:left; display:block;margin-top:15px}
+.navmenu .logo {float:left; display:block;margin-top:5px}
 .navmenu .logo h1 { display:inline-block; vertical-align:top}
 .navmenu .logo h2 { display:inline-block; vertical-align:top;margin:5px 0 0 15px}
-.navmenu ul {float:left; height:30px; line-height:30px;margin-top:20px; clear:left}
+.navmenu ul {float:left; height:30px; line-height:30px;margin-top:0px}
 .navmenu ul li { display:inline-block; vertical-align:top;margin-right:35px; position:relative; text-align:center}
 .navmenu ul li a{font-size:20px;color:#777;font-family:hum521n,'Microsoft YaHei','微软雅黑',arial;}
 .navmenu ul li a:hover,.navmenu ul li.check a {color:#000}
-.navmenu ul li i { display:block; position:absolute; z-index:1;top:0;width:100%; text-align:center;font-size:20px;opacity:0}
-.navmenu ul li:hover i{opacity:1}
-.navmenu ul li span {opacity:1}
-.navmenu ul li:hover span {opacity:0}
+.navmenu ul li i { display:block; position:absolute; z-index:1;top:0;width:100%; text-align:center;font-size:20px;opacity:0; -khtml-opacity:0;-moz-opacity:0;filter:Alpha(opacity=0);filter:"alpha(opacity=0)"; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);/*兼容ie8及以下*/}
+.navmenu ul li:hover i{opacity:1; -khtml-opacity:1;-moz-opacity:1;filter:Alpha(opacity=100);filter:"alpha(opacity=100)"; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);/*兼容ie8及以下*/}
+.navmenu ul li span {opacity:1; -khtml-opacity:1;-moz-opacity:1;filter:Alpha(opacity=100);filter:"alpha(opacity=100)"; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);/*兼容ie8及以下*/}
+.navmenu ul li:hover span {opacity:0; -khtml-opacity:0;-moz-opacity:0;filter:Alpha(opacity=0);filter:"alpha(opacity=0)"; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);/*兼容ie8及以下*/}
 .particulars-nav-fixed.actives .navmenu { height:0;}
-.navmenu .sercate {float:right;margin-top:30px; text-align:right}
+.navmenu .sercate {float:right;margin-top:40px; text-align:right;}
 .navmenu .sercate a {font-size:16px;margin-left:25px}
-.telqq {float:right; text-align:right;margin-top:15px}
+.telqq {float:right; text-align:right;margin-top:8px;clear: right}
 .telqq p { display:inline-block; vertical-align:middle;font-size:18px;}
-.telqq p span { display:inline-block; vertical-align:middle;margin-right:5px;margin-top:7px}
+.telqq p span { display:inline-block; vertical-align:middle;margin-right:5px;margin-top:0px}
 .telqq a { display:inline-block; vertical-align:middle;margin-left:15px}
-.telqq img { height:23px;}
+.telqq img { height:27px;}
 
 
 .index-sildebox{width:100%;height:666px; position:relative;margin-top:125px;}
 .index-sildebox .hd{width:100%; position:absolute;bottom:-150px;left:0; background:#f9f9f9; overflow:hidden}
+/*.index-sildebox .hd{width:100%; position:absolute;bottom:-150px;left:0; background:#ffffff; overflow:hidden}*/
 .index-sildebox .hd ul{width:100%;height:136px; padding:40px 0;margin:0 auto; text-align:center}
 .index-sildebox .hd ul li{width:150px;height:136px; cursor:pointer; display:inline-block;}
 .index-sildebox .hd ul li .li{width:100%;height:100%; background-position:center top; background-repeat:no-repeat}
 .index-sildebox .hd ul li .li-on{ display:none; background-position:center bottom; background-repeat:no-repeat}
 .index-sildebox .hd ul li.on .li{ display:none;}
 .index-sildebox .hd ul li.on .li-on{ display:block;}
-.index-sildebox .bd ul li:nth-child(1){ilter:alpha(opacity=100); -moz-opacity:1; opacity:1;}
+.index-sildebox .bd ul li:nth-child(1){filter:alpha(opacity=100); -moz-opacity:1; opacity:1;}
 .index-sildebox .bd li{height:600px; background-position:center; background-repeat:no-repeat;}
 .index-sildebox .bd li a{position:absolute; left:0px; top:0px; width:100%; height:100%;}
 
-.about {padding-top:60px}
+.about {padding-top:100px}
 .about .subject {margin-top:150px; text-align:center;font-family: fzltcxhjw,'Microsoft YaHei','微软雅黑',arial;font-size:50px; line-height:70px;color:#000;margin-bottom:50px}
 .about li {float:left;width:13.6%;margin-right:8%;}
 .about li.l5 {margin-right:0}
@@ -214,8 +215,8 @@ hr {border:0;border-top:1px solid #ccc; height:1px;margin-top:5px}
 .contactleft .list i { display:inline-block; vertical-align:middle;width:36px; height:36px;margin-right:10px; }
 .contactleft .list i.email { background:url(../images/three1.png) no-repeat center;background-size:65%}
 .contactleft .list i.qq { background:url(../images/three2.png) no-repeat center;background-size:65%}
-.contactleft .list i.www { background:url(../images/three.png) no-repeat center;background-size:70%}
-.contactleft .list i.join { background:url(../images/three.png) no-repeat center;background-size:76%}
+.contactleft .list i.www { background:url(../images/www.png) no-repeat center;background-size:70%}
+.contactleft .list i.join { background:url(../images/join.png) no-repeat center;background-size:76%}
 .contactleft .listjoin {margin-top:102px}
 .contactleft .cons {margin:10px 0 0 50px;font-family: fzltcxhjw,'Microsoft YaHei','微软雅黑',arial;color:#666;max-width:420px;font-weight:Bold;font-size:16px}
 .contactleft .cons .job { display:block; height:50px; line-height:50px; text-align:center;width:250px;border:1px solid #999;margin:30px 0 0 0; }

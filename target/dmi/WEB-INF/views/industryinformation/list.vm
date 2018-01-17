@@ -1,0 +1,41 @@
+#set($page_title="资讯管理")
+#set($layout="/layout/layoutbackend.vm")
+
+<ol class="breadcrumb">
+    <li><a href="#springUrl("/industryinformation/list")">资讯管理</a></li>
+    <li><a href="javascript:void(0);">资讯列表</a></li>
+</ol>
+<div id="wrapper">
+    <div class="workslist_add">
+        <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/industryinformation/add")">新增</a>
+    </div>
+</div>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>封面图片</th>
+            <th>资讯名称</th>
+            <th>资讯发布时间</th>
+            <th>更新时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        #foreach($industryinformation in $pageObj.result)
+        <tr>
+            <td>$!{velocityCount}</td>
+            <td><img src="#springUrl("$!{industryinformation.coverpic}")" alt="#springUrl("$!{industryinformation.coverpic}")" width="200px"/></td>
+            <td>$!{industryinformation.name}</td>
+            <td>$!{industryinformation.date}</td>
+            <td>$!date.format('yyyy-MM-dd HH:mm:ss',$!{industryinformation.updateTime})</td>
+            <td>
+                #*<a class="btn btn-primary btn-sm appInfo" href="#springUrl("/industryinformation/edit/$!industryinformation.id")">编辑内容</a>*#
+                <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/industryinformation/piclist?industryinformationId=$!industryinformation.id")">编辑图片</a>
+                <a class="btn btn-primary btn-sm appInfo" href="#springUrl("/industryinformation/delete/$!industryinformation.id")" onclick="return confirm('确认要删除吗?')">删除</a>
+            </td>
+        </tr>
+        #end
+    </tbody>
+</table>
+#pager("${rc.contextPath}$pageSkipUrl", $pageObj)

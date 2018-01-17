@@ -32,7 +32,7 @@
                 #if($!{velocityCount}%2 != 0)
                     <li>
                         <div class="pic">
-                            <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url(#springUrl("$works.coverPic"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+                            <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url($works.coverPic)"></p><img src="#springUrl("/resources/images/65.png")" /></a>
                         </div>
                         <div class="cons">
                             <div class="title2">
@@ -52,7 +52,7 @@
                  #else
                     <li class="no">
                         <div class="pic">
-                            <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url(#springUrl("$works.coverPic"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+                            <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url($works.coverPic)"></p><img src="#springUrl("/resources/images/65.png")" /></a>
                         </div>
                         <div class="cons">
                             <div class="title2">

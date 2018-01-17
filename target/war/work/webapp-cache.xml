@@ -27,18 +27,25 @@
           <string>resources/images/banner_small3.png</string>
           <string>resources/images/banner_small4.png</string>
           <string>resources/images/banner_small5.png</string>
+          <string>resources/images/close.png</string>
           <string>resources/images/f1.jpg</string>
           <string>resources/images/f2.jpg</string>
           <string>resources/images/ft1.png</string>
           <string>resources/images/job1.jpg</string>
           <string>resources/images/job2.jpg</string>
+          <string>resources/images/join.png</string>
           <string>resources/images/logo.png</string>
           <string>resources/images/logo2.png</string>
+          <string>resources/images/logo3.jpg</string>
+          <string>resources/images/mobmenu.png</string>
+          <string>resources/images/sercate.jpg</string>
+          <string>resources/images/telqq.jpg</string>
           <string>resources/images/three1.png</string>
           <string>resources/images/three2.png</string>
           <string>resources/images/three3.png</string>
           <string>resources/images/topqq.jpg</string>
           <string>resources/images/toptel.jpg</string>
+          <string>resources/images/www.png</string>
           <string>resources/img/common/beta.png</string>
           <string>resources/img/common/headerfooter/haofang_logo_detail140801.png</string>
           <string>resources/img/common/hf-goto-top.png</string>
@@ -175,115 +182,16 @@
           <string>resources/thirdparty/sb-admin-2/css/timeline.css</string>
           <string>resources/thirdparty/smartMenu/smartMenu.css</string>
           <string>resources/thirdparty/smartMenu/smartMenu.js</string>
-          <string>resources/uploadfile/1498103588.jpg</string>
-          <string>resources/uploadfile/1498103593.jpg</string>
-          <string>resources/uploadfile/1498107311_2.png</string>
           <string>resources/uploadfile/1498116303.jpg</string>
           <string>resources/uploadfile/1498116378.jpg</string>
           <string>resources/uploadfile/1498116386.jpg</string>
           <string>resources/uploadfile/1498116394.jpg</string>
           <string>resources/uploadfile/1498116403.jpg</string>
-          <string>resources/uploadfile/1498192608.jpg</string>
-          <string>resources/uploadfile/1498192613.jpg</string>
-          <string>resources/uploadfile/1498192617.jpg</string>
-          <string>resources/uploadfile/1498192621.jpg</string>
-          <string>resources/uploadfile/1498192631.jpg</string>
-          <string>resources/uploadfile/1498192638.jpg</string>
-          <string>resources/uploadfile/1498192642.jpg</string>
-          <string>resources/uploadfile/1498192645.jpg</string>
-          <string>resources/uploadfile/1498192650.jpg</string>
-          <string>resources/uploadfile/1498197999.jpg</string>
-          <string>resources/uploadfile/1498198039.jpg</string>
           <string>resources/uploadfile/1498198080.jpg</string>
           <string>resources/uploadfile/1498198119.jpg</string>
-          <string>resources/uploadfile/1499498689.jpg</string>
-          <string>resources/uploadfile/1499498903.jpg</string>
-          <string>resources/uploadfile/1499498918.jpg</string>
-          <string>resources/uploadfile/1499498928.jpg</string>
-          <string>resources/uploadfile/1499498944.jpg</string>
-          <string>resources/uploadfile/1499505906.jpg</string>
-          <string>resources/uploadfile/1499665847.jpg</string>
-          <string>resources/uploadfile/1499670437.jpg</string>
-          <string>resources/uploadfile/1500085692.jpg</string>
-          <string>resources/uploadfile/1500090451.jpg</string>
-          <string>resources/uploadfile/1500090726.jpg</string>
-          <string>resources/uploadfile/1500091189.jpg</string>
-          <string>resources/uploadfile/1500091282.jpg</string>
-          <string>resources/uploadfile/1500091517.jpg</string>
-          <string>resources/uploadfile/1500091690.jpg</string>
-          <string>resources/uploadfile/1500091744.jpg</string>
-          <string>resources/uploadfile/1500098990.jpg</string>
-          <string>resources/uploadfile/1500099704.jpg</string>
-          <string>resources/uploadfile/1500100130.jpg</string>
-          <string>resources/uploadfile/1500100927.jpg</string>
-          <string>resources/uploadfile/1500101619.jpg</string>
-          <string>resources/uploadfile/1500101874.jpg</string>
-          <string>resources/uploadfile/1500102169.jpg</string>
-          <string>resources/uploadfile/1500102698.jpg</string>
-          <string>resources/uploadfile/1500104614.jpg</string>
-          <string>resources/uploadfile/1500105925.jpg</string>
-          <string>resources/uploadfile/1500107464.jpg</string>
-          <string>resources/uploadfile/1500107898.jpg</string>
-          <string>resources/uploadfile/1500109257.jpg</string>
-          <string>resources/uploadfile/1500110362.jpg</string>
-          <string>resources/uploadfile/1500111075.jpg</string>
-          <string>resources/uploadfile/1500111905.jpg</string>
-          <string>resources/uploadfile/1500168231.jpg</string>
-          <string>resources/uploadfile/1500169101.jpg</string>
-          <string>resources/uploadfile/1500172328.jpg</string>
           <string>resources/uploadfile/1500185651.jpg</string>
-          <string>resources/uploadfile/1500187325.jpg</string>
-          <string>resources/uploadfile/1500187342.jpg</string>
-          <string>resources/uploadfile/1500187378.jpg</string>
-          <string>resources/uploadfile/1500187405.jpg</string>
-          <string>resources/uploadfile/1500187433.jpg</string>
-          <string>resources/uploadfile/1500188131.jpg</string>
           <string>resources/uploadfile/1500188131.png</string>
-          <string>resources/uploadfile/1500188161.jpg</string>
           <string>resources/uploadfile/1500188161.png</string>
-          <string>resources/uploadfile/1500190991_2.png</string>
-          <string>resources/uploadfile/1500191234_2.png</string>
-          <string>resources/uploadfile/1500191775_2.png</string>
-          <string>resources/uploadfile/1500191880_2.png</string>
-          <string>resources/uploadfile/1500196185.jpg</string>
-          <string>resources/uploadfile/1500196201.jpg</string>
-          <string>resources/uploadfile/1500196218.jpg</string>
-          <string>resources/uploadfile/1500196218_2.png</string>
-          <string>resources/uploadfile/1500196228.jpg</string>
-          <string>resources/uploadfile/1500199160.jpg</string>
-          <string>resources/uploadfile/1500199210.jpg</string>
-          <string>resources/uploadfile/1500199218.jpg</string>
-          <string>resources/uploadfile/1500200105.jpg</string>
-          <string>resources/uploadfile/1502361884.jpg</string>
-          <string>resources/uploadfile/1503464299.jpg</string>
-          <string>resources/uploadfile/1504691762.jpg</string>
-          <string>resources/uploadfile/1505464445.jpg</string>
-          <string>resources/uploadfile/1505464685.jpg</string>
-          <string>resources/uploadfile/1505465117.jpg</string>
-          <string>resources/uploadfile/1505465417.jpg</string>
-          <string>resources/uploadfile/1505465525.jpg</string>
-          <string>resources/uploadfile/1505465607.jpg</string>
-          <string>resources/uploadfile/1505465661.jpg</string>
-          <string>resources/uploadfile/1505465778.jpg</string>
-          <string>resources/uploadfile/1505465957.jpg</string>
-          <string>resources/uploadfile/1505466047.jpg</string>
-          <string>resources/uploadfile/1505466158.jpg</string>
-          <string>resources/uploadfile/1505466259.jpg</string>
-          <string>resources/uploadfile/1505466650.jpg</string>
-          <string>resources/uploadfile/1505466694.jpg</string>
-          <string>resources/uploadfile/1505467001.jpg</string>
-          <string>resources/uploadfile/1505467187.jpg</string>
-          <string>resources/uploadfile/1505467271.jpg</string>
-          <string>resources/uploadfile/1505467358.jpg</string>
-          <string>resources/uploadfile/1505467464.jpg</string>
-          <string>resources/uploadfile/1505467505.jpg</string>
-          <string>resources/uploadfile/1505467586.jpg</string>
-          <string>resources/uploadfile/1505527503.jpg</string>
-          <string>resources/uploadfile/1505527643.jpg</string>
-          <string>resources/uploadfile/1505527820.jpg</string>
-          <string>resources/uploadfile/1505527909.jpg</string>
-          <string>resources/uploadfile/1505527978.jpg</string>
-          <string>resources/uploadfile/1505535966.jpg</string>
           <string>resources/uploadfile/1507887494.jpg</string>
           <string>resources/uploadfile/1507887502.jpg</string>
           <string>resources/uploadfile/image/20170908/20170908203920_15009.jpg</string>
@@ -293,6 +201,10 @@
           <string>WEB-INF/pages/500.jsp</string>
           <string>WEB-INF/sql/init.sql</string>
           <string>WEB-INF/views/client/list.vm</string>
+          <string>WEB-INF/views/industryinformation/add.vm</string>
+          <string>WEB-INF/views/industryinformation/edit.vm</string>
+          <string>WEB-INF/views/industryinformation/list.vm</string>
+          <string>WEB-INF/views/industryinformation/piclist.vm</string>
           <string>WEB-INF/views/layout/blankLayout.vm</string>
           <string>WEB-INF/views/layout/dialog.vm</string>
           <string>WEB-INF/views/layout/footer.vm</string>
@@ -312,8 +224,10 @@
           <string>WEB-INF/views/portals/career.vm</string>
           <string>WEB-INF/views/portals/contact.vm</string>
           <string>WEB-INF/views/portals/home.vm</string>
+          <string>WEB-INF/views/portals/industryinformation.vm</string>
           <string>WEB-INF/views/portals/work.vm</string>
           <string>WEB-INF/views/portals/workdetail.vm</string>
+          <string>WEB-INF/views/singlepic/list.vm</string>
           <string>WEB-INF/views/works/add.vm</string>
           <string>WEB-INF/views/works/edit.vm</string>
           <string>WEB-INF/views/works/list.vm</string>
@@ -322,41 +236,36 @@
           <string>WEB-INF/web.xml</string>
           <string>WEB-INF/classes/applicationContext.xml</string>
           <string>WEB-INF/classes/applicationDBContext.xml</string>
-          <string>WEB-INF/classes/com/shdmi/controller/ApplyController.class</string>
           <string>WEB-INF/classes/com/shdmi/controller/BaseController.class</string>
           <string>WEB-INF/classes/com/shdmi/controller/ClientController.class</string>
+          <string>WEB-INF/classes/com/shdmi/controller/IndustryinformationController.class</string>
           <string>WEB-INF/classes/com/shdmi/controller/OutwardController.class</string>
           <string>WEB-INF/classes/com/shdmi/controller/PortalsController.class</string>
-          <string>WEB-INF/classes/com/shdmi/controller/ProjectController.class</string>
-          <string>WEB-INF/classes/com/shdmi/controller/UploadController.class</string>
+          <string>WEB-INF/classes/com/shdmi/controller/SinglePicController.class</string>
           <string>WEB-INF/classes/com/shdmi/controller/WorksController.class</string>
           <string>WEB-INF/classes/com/shdmi/dao/AdminMapper.class</string>
-          <string>WEB-INF/classes/com/shdmi/dao/ApplyMapper.class</string>
+          <string>WEB-INF/classes/com/shdmi/dao/IndustryinformationMapper.class</string>
           <string>WEB-INF/classes/com/shdmi/dao/mapper/AdminMapper.xml</string>
-          <string>WEB-INF/classes/com/shdmi/dao/mapper/ApplyMapper.xml</string>
+          <string>WEB-INF/classes/com/shdmi/dao/mapper/IndustryinformationMapper.xml</string>
           <string>WEB-INF/classes/com/shdmi/dao/mapper/PortalsMapper.xml</string>
-          <string>WEB-INF/classes/com/shdmi/dao/mapper/ProjectMapper.xml</string>
+          <string>WEB-INF/classes/com/shdmi/dao/mapper/SinglePicMapper.xml</string>
           <string>WEB-INF/classes/com/shdmi/dao/mapper/WorksMapper.xml</string>
           <string>WEB-INF/classes/com/shdmi/dao/PortalsMapper.class</string>
-          <string>WEB-INF/classes/com/shdmi/dao/ProjectMapper.class</string>
+          <string>WEB-INF/classes/com/shdmi/dao/SinglePicMapper.class</string>
           <string>WEB-INF/classes/com/shdmi/dao/WorksMapper.class</string>
           <string>WEB-INF/classes/com/shdmi/entity/Admin.class</string>
-          <string>WEB-INF/classes/com/shdmi/entity/Apply.class</string>
           <string>WEB-INF/classes/com/shdmi/entity/Client.class</string>
-          <string>WEB-INF/classes/com/shdmi/entity/Picture.class</string>
-          <string>WEB-INF/classes/com/shdmi/entity/Project.class</string>
-          <string>WEB-INF/classes/com/shdmi/entity/Tag.class</string>
+          <string>WEB-INF/classes/com/shdmi/entity/Industryinformation.class</string>
+          <string>WEB-INF/classes/com/shdmi/entity/SinglePic.class</string>
           <string>WEB-INF/classes/com/shdmi/entity/Works.class</string>
           <string>WEB-INF/classes/com/shdmi/entity/WorksPicture.class</string>
-          <string>WEB-INF/classes/com/shdmi/enums/ApplyType.class</string>
           <string>WEB-INF/classes/com/shdmi/enums/CategoryType.class</string>
           <string>WEB-INF/classes/com/shdmi/enums/IndustryType.class</string>
-          <string>WEB-INF/classes/com/shdmi/enums/ProjectBottomTag.class</string>
-          <string>WEB-INF/classes/com/shdmi/enums/ProjectTopTag.class</string>
+          <string>WEB-INF/classes/com/shdmi/enums/SinglePicType.class</string>
           <string>WEB-INF/classes/com/shdmi/service/AdminService.class</string>
-          <string>WEB-INF/classes/com/shdmi/service/ApplyService.class</string>
+          <string>WEB-INF/classes/com/shdmi/service/IndustryinformationService.class</string>
           <string>WEB-INF/classes/com/shdmi/service/PortalsService.class</string>
-          <string>WEB-INF/classes/com/shdmi/service/ProjectService.class</string>
+          <string>WEB-INF/classes/com/shdmi/service/SinglePicService.class</string>
           <string>WEB-INF/classes/com/shdmi/service/WorksService.class</string>
           <string>WEB-INF/classes/com/shdmi/utils/CacheUtil$1.class</string>
           <string>WEB-INF/classes/com/shdmi/utils/CacheUtil.class</string>
@@ -367,6 +276,7 @@
           <string>WEB-INF/classes/com/shdmi/utils/ParamKey.class</string>
           <string>WEB-INF/classes/com/shdmi/utils/QueryBuilder.class</string>
           <string>WEB-INF/classes/com/shdmi/utils/Regex.class</string>
+          <string>WEB-INF/classes/com/shdmi/utils/UploadFileUtils.class</string>
           <string>WEB-INF/classes/database.properties</string>
           <string>WEB-INF/classes/datasource.xml</string>
           <string>WEB-INF/classes/logback.xml</string>
@@ -403,7 +313,7 @@
           <string>WEB-INF/lib/xmlpull-1.1.3.1.jar</string>
           <string>WEB-INF/lib/xpp3_min-1.1.4c.jar</string>
           <string>WEB-INF/lib/c3p0-0.9.1.2.jar</string>
-          <string>WEB-INF/lib/mysql-connector-java-5.1.23.jar</string>
+          <string>WEB-INF/lib/mysql-connector-java-5.1.32.jar</string>
           <string>WEB-INF/lib/mybatis-3.2.8.jar</string>
           <string>WEB-INF/lib/mybatis-spring-1.2.2.jar</string>
           <string>WEB-INF/lib/logback-core-1.1.2.jar</string>
@@ -464,7 +374,7 @@
               <columnNumber>17</columnNumber>
               <source>
                 <modelId>com.shdmi:dmi:1.0-SNAPSHOT</modelId>
-                <location>E:\ShenHua\java\DMI\dmi\pom.xml</location>
+                <location>D:\GitProject\dmi\dmi\pom.xml</location>
               </source>
             </org.apache.maven.model.InputLocation>
           </entry>
@@ -1275,7 +1185,7 @@
       <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
-        <version>5.1.23</version>
+        <version>5.1.32</version>
         <type>jar</type>
         <scope>compile</scope>
         <exclusions/>
@@ -1315,7 +1225,7 @@
         </locations>
         <managementKey>mysql:mysql-connector-java:jar</managementKey>
       </dependency>
-      <targetFileName>mysql-connector-java-5.1.23.jar</targetFileName>
+      <targetFileName>mysql-connector-java-5.1.32.jar</targetFileName>
     </org.apache.maven.plugin.war.util.DependencyInfo>
     <org.apache.maven.plugin.war.util.DependencyInfo>
       <dependency>

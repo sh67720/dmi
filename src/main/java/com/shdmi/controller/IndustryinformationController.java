@@ -71,7 +71,7 @@ public class IndustryinformationController extends BaseController{
             return getRedirectUrl(INDUSTRYINFORMATION_ADD);
         }
 
-        List<String> list = UploadFileUtils.savePicture(request, files);
+        List<String> list = UploadFileUtils.savePicture(files);
         if(list == null||list.size() <=0){
             addRedirectError(redirectAttributes,"文件为空");
             return getRedirectUrl(INDUSTRYINFORMATION_ADD);
@@ -101,7 +101,7 @@ public class IndustryinformationController extends BaseController{
         if (session.getAttribute("admin") == null) return getRedirectUrl("/outward/login");
 
         if(files != null&&files.length > 0) {//重新上传了图片情况
-            List<String> list = UploadFileUtils.savePicture(request, files);
+            List<String> list = UploadFileUtils.savePicture(files);
             if (list != null&&list.size() > 0) {
                 for (String s : list) {
                     Industryinformation industryinformationNew = new Industryinformation();
@@ -146,7 +146,7 @@ public class IndustryinformationController extends BaseController{
         if(list != null&&list.size() > 0){
             for(Industryinformation industryinformation:list) {
                 industryinformationService.deletePic(industryinformation.getId());
-                UploadFileUtils.deleteFile(request, industryinformation.getPath());
+                UploadFileUtils.deleteFile(industryinformation.getPath());
             }
         }
         addDeleteSuccessMessage(redirectAttributes);
@@ -165,7 +165,7 @@ public class IndustryinformationController extends BaseController{
             return getRedirectUrl(INDUSTRYINFORMATION_PICLIST + "?industryinformationId=" + industryinformationId);
         }
 
-        List<String> list = UploadFileUtils.savePicture(request, files);
+        List<String> list = UploadFileUtils.savePicture(files);
         if(list == null||list.size() <=0){
             return "文件为空";
         }
@@ -206,7 +206,7 @@ public class IndustryinformationController extends BaseController{
         industryinformationService.deletePic(id);
         if(list != null&&list.size() > 0){
             for(Industryinformation industryinformation:list) {
-                UploadFileUtils.deleteFile(request, industryinformation.getPath());
+                UploadFileUtils.deleteFile(industryinformation.getPath());
             }
         }
         addDeleteSuccessMessage(redirectAttributes);

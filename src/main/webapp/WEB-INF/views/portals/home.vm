@@ -216,7 +216,7 @@
             #if($!{velocityCount}%2 != 0)
                 <li>
                     <div class="pic">
-                        <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url(#springUrl("$works.coverPic"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+                        <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url($works.coverPic)"></p><img src="#springUrl("/resources/images/65.png")" /></a>
                     </div>
                     <div class="cons">
                         <div class="title2">
@@ -236,7 +236,7 @@
             #else
                 <li class="no">
                     <div class="pic">
-                        <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url(#springUrl("$works.coverPic"))"></p><img src="#springUrl("/resources/images/65.png")" /></a>
+                        <a href="#springUrl("/portals/workdetail/$!works.id")" target="_blank"><span></span><p style=" background-image:url($works.coverPic)"></p><img src="#springUrl("/resources/images/65.png")" /></a>
                     </div>
                     <div class="cons">
                         <div class="title2">
@@ -449,19 +449,21 @@
 </div>
 <div class="wrap pad1per">
     <div class="msubejct">
-        行业大牌选择与<font>点创</font>一起创新
+        #if($cooperatems.size() > 0)
+            行业大牌选择与<font>点创</font>一起创新
+        #end
     </div>
     <ul class="custom">
         #foreach($cooperatem in $cooperatems)
             #if($!{velocityCount}%5 != 0)
                 <li>
                     <div class="pic">
-                        <a href="javascript:;"><img src="#springUrl("$cooperatem.path")" /></a>
+                        <a href="javascript:;"><img src="$cooperatem.path" /></a>
                     </div></li>
             #else
                 <li class="no">
                     <div class="pic">
-                        <a href="javascript:;"><img src="#springUrl("$cooperatem.path")" /></a>
+                        <a href="javascript:;"><img src="$cooperatem.path" /></a>
                     </div></li>
             #end
         #end
@@ -510,14 +512,16 @@
 </div>
 <div class="wrap">
     <div class="msubejct msubejctpro">
-        点创动态<font>与</font>行业资讯
+        #if($industryinformations.size() > 0)
+            点创动态<font>与</font>行业资讯
+        #end
     </div>
     <ul class="indnews">
         #foreach($item in $industryinformations)
             #if($!{velocityCount}%3 != 0)
                 <li>
                     <div class="pic">
-                        <a href="#springUrl("/portals/industryinformation/$!item.id")"><img src="#springUrl("$item.coverpic")" /></a>
+                        <a href="#springUrl("/portals/industryinformation/$!item.id")"><img src="$item.coverpic" /></a>
                     </div>
                     <div class="title">
                         <a href="#springUrl("/portals/industryinformation/$!item.id")">行业资讯 | $item.name</a>
@@ -528,7 +532,7 @@
             #else
                 <li class="no">
                     <div class="pic">
-                        <a href="#springUrl("/portals/industryinformation/$!item.id")"><img src="#springUrl("$item.coverpic")" /></a>
+                        <a href="#springUrl("/portals/industryinformation/$!item.id")"><img src="$item.coverpic" /></a>
                     </div>
                     <div class="title">
                         <a href="#springUrl("/portals/industryinformation/$!item.id")">行业资讯 | $item.name</a>

@@ -103,7 +103,7 @@ public class WorksController extends BaseController{
         if(list != null&&list.size() > 0){
             for(WorksPicture worksPicture:list) {
                 worksService.picDelete(worksPicture.getId());
-                UploadFileUtils.deleteFile(request, worksPicture.getPath());
+                UploadFileUtils.deleteFile(worksPicture.getPath());
             }
         }
         addDeleteSuccessMessage(redirectAttributes);
@@ -124,9 +124,10 @@ public class WorksController extends BaseController{
             return getRedirectUrl(WORKS_PICLIST + "?worksId=" + worksId);
         }
 
-        List<String> list = UploadFileUtils.savePicture(request, files);
+        List<String> list = UploadFileUtils.savePicture(files);
         if(list == null||list.size() <=0){
-            return "文件为空";
+            addRedirectError(redirectAttributes,"请选择图片");
+            return getRedirectUrl(WORKS_PICLIST + "?worksId=" + worksId);
         }
         for(String s:list) {
             WorksPicture worksPicture = new WorksPicture();
@@ -166,7 +167,7 @@ public class WorksController extends BaseController{
         worksService.picDelete(id);
         if(list != null&&list.size() > 0){
             for(WorksPicture worksPicture:list) {
-                UploadFileUtils.deleteFile(request, worksPicture.getPath());
+                UploadFileUtils.deleteFile(worksPicture.getPath());
             }
         }
         addDeleteSuccessMessage(redirectAttributes);

@@ -51,7 +51,7 @@ public class SinglePicController extends BaseController{
             return getRedirectUrl(SINGLEPIC_LIST);
         }
 
-        List<String> list = UploadFileUtils.savePicture(request, files);
+        List<String> list = UploadFileUtils.savePicture(files);
         if(list == null||list.size() <=0){
             addRedirectError(redirectAttributes,"图片为空");
             return getRedirectUrl(SINGLEPIC_LIST);
@@ -72,7 +72,7 @@ public class SinglePicController extends BaseController{
         //删除图片操作
         SinglePic singlePic = singlePicService.selecePicById(id);
         singlePicService.delete(id);
-        UploadFileUtils.deleteFile(request, singlePic.getPath());
+        UploadFileUtils.deleteFile(singlePic.getPath());
         addDeleteSuccessMessage(redirectAttributes);
         return getRedirectUrl(SINGLEPIC_LIST);
     }

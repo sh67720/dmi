@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shdmi.dao.SinglePicMapper">
+    <!--案例-->
+    <insert id="add" parameterType="com.shdmi.entity.SinglePic">
+        INSERT INTO singlepicture(`type`, path, createTime, updateTime)
+        VALUES (#{type}, #{path}, now(), now());
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM singlepicture WHERE id = #{id}
+    </delete>
+
+    <select id="count" resultType="java.lang.Integer">
+        SELECT count(*) FROM singlepicture WHERE 1=1
+    </select>
+
+    <select id="selecePic" resultType="com.shdmi.entity.SinglePic">
+        SELECT * FROM singlepicture WHERE 1=1
+        ORDER BY updateTime ASC limit #{index},#{pageSize};
+    </select>
+
+    <select id="selecePicByType" resultType="com.shdmi.entity.SinglePic">
+        SELECT * FROM singlepicture WHERE 1=1
+        AND `type` = #{type}
+        ORDER BY updateTime ASC limit #{index},#{pageSize};
+    </select>
+
+    <select id="selecePicById" resultType="com.shdmi.entity.SinglePic">
+        SELECT * FROM singlepicture WHERE 1=1
+        AND id = #{id};
+    </select>
+</mapper>

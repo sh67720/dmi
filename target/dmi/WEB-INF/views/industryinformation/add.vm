@@ -1,0 +1,50 @@
+#set($page_title="新增资讯")
+#set($layout="/layout/layoutbackend.vm")
+
+<link rel="stylesheet" href="#springUrl("/resources/uploadfile/css/webuploader.css")" type="text/css">
+<link rel="stylesheet" href="#springUrl("/resources/uploadfile/css/diyUpload.css")" type="text/css">
+<script src="#springUrl("/resources/uploadfile/js/webuploader.html5only.min.js")"></script>
+<script src="#springUrl("/resources/uploadfile/js/diyUpload.js")"></script>
+
+<ol class="breadcrumb">
+    <li><a href="#springUrl("/industryinformation/list")">资讯管理</a></li>
+    <li><a href="javascript:void(0);">新增资讯</a></li>
+</ol>
+
+<form class="form-horizontal" id="industryinformationFormAdd" action="#springUrl("/industryinformation/add")" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label for="code" class="col-sm-2 control-label">封面图片（建议尺寸600*435）</label>
+        <div class="col-sm-3">
+            <input type="file" name="file"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">资讯名称</label>
+        <div class="col-sm-3">
+            #springFormInput("industryinformation.name" 'class="form-control" maxlength="100"')
+            #*<textarea class="form-control" placeholder=""  id="name" name="name" rows="1" maxlength="100"></textarea>*#
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">资讯发布时间（格式“2017-11-19”）</label>
+        <div class="col-sm-3">
+            #springFormInput("industryinformation.date" 'class="form-control" maxlength="100"')
+            #*<textarea class="form-control" placeholder=""  id="name" name="name" rows="1" maxlength="100"></textarea>*#
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-3">
+            <button type="button" class="btn btn-default prevPage">返回</button>
+            <input class="btn btn-success" type="submit" value="提交"">
+        </div>
+    </div>
+</form>
+<script src="#springUrl("/resources/js/works/add.js")"></script>
+
+
+
+

@@ -50,4 +50,6 @@
 <ul class="nav" id="side-menu">
     <li><a href="${basePath}/client/list"><i class="menu home"></i><span>客户意向</span></a></li>
     <li><a href="${basePath}/works/list"><i class="menu pickup"></i><span>案例管理</span></a></li>
+    <li><a href="${basePath}/singlepic/list"><i class="menu pickup"></i><span>图片管理</span></a></li>
+    <li><a href="${basePath}/industryinformation/list"><i class="menu pickup"></i><span>资讯管理</span></a></li>
 </ul>

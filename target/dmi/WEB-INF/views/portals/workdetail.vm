@@ -22,7 +22,7 @@
         </div>
         <div class="showpic">
             #foreach($pic in $worksPictures)
-                <img src="#springUrl("$pic.path")" alt="" />
+                <img src="$pic.path" alt="" />
             #end
             <br />
             <span style="white-space:normal;"></span>

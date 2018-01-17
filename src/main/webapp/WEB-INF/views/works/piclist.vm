@@ -64,7 +64,7 @@
         <tr>
             <td>$!{velocityCount}</td>
             <td>
-                <img src="#springUrl("$!{worksPicture.path}")" alt="#springUrl("$!{worksPicture.path}")" width="200px"/>
+                <img src="$!{worksPicture.path}" alt="#springUrl("$!{worksPicture.path}")" width="200px"/>
             </td>
             <td>
                 #if($!{worksPicture.iscover})是

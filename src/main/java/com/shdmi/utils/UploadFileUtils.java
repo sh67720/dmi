@@ -16,7 +16,12 @@ import java.util.logging.Logger;
  */
 public class UploadFileUtils {
 
-    public static List<String> savePicture(HttpServletRequest request, MultipartFile[] files){
+    public static final String rootPath = "/root/images/"; //虚拟目录，对外展示图片的服务器地址
+    public static final String httpPath = "http://img.shdmi.cn/"; //图片服务器的http地址
+    //public static final String rootPath = "E:\\"; //虚拟目录，对外展示图片的服务器地址
+    //public static final String httpPath = "file://E:/"; //图片服务器的http地址
+    public static final String picProjectName = "DearCreative/"; //图片服务器的项目目录
+    public static List<String> savePicture(MultipartFile[] files){
         List<String> names = null;
         //判断file数组不能为空并且长度大于0
         if(files != null && files.length > 0){
@@ -26,7 +31,7 @@ public class UploadFileUtils {
             for(int i = 0;i<files.length;i++){
                 MultipartFile file = files[i];
                 //保存文件
-                String name = saveFile(request, file, date);
+                String name = saveFile(file, date);
                 if (StringUtils.isNotEmpty(name))
                     names.add(name);
             }
@@ -34,20 +39,20 @@ public class UploadFileUtils {
         return names;
     }
 
-    private static String saveFile(HttpServletRequest request, MultipartFile file, String date) {
+    private static String saveFile(MultipartFile file, String date) {
         // 判断文件是否为空
         if (!file.isEmpty()) {
             try {
                 String name = file.getOriginalFilename();
                 // 文件保存路径
-                String rootPath = request.getSession().getServletContext().getRealPath("/");
-                String filePath = "/upload/" + date + "/" + System.nanoTime() + name.substring(name.lastIndexOf("."));
-                File fileTo = new File(rootPath + filePath);
+                String filePath = date + "/" + System.nanoTime() + name.substring(name.lastIndexOf("."));
+                File fileTo = new File(rootPath + picProjectName +filePath);
                 if (!fileTo.getParentFile().exists())
                     fileTo.mkdirs();
                 // 转存文件
                 file.transferTo(fileTo);
-                return filePath;
+                //return filePath;
+                return httpPath + picProjectName + filePath;//本地地址转化为http地址
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -55,23 +60,22 @@ public class UploadFileUtils {
         return null;
     }
 
-    public static boolean deleteFile(HttpServletRequest request, String path){
-        String rootPath = request.getSession().getServletContext().getRealPath("/");
-        File file = new File(rootPath + path);
+    public static boolean deleteFile(String path){
+        File file = new File(path.replace(httpPath, rootPath));//http地址转化为本地地址
         // 如果文件路径所对应的文件存在，并且是一个文件，则直接删除
         if (file.exists() && file.isFile()) {
             if (file.delete()) {
-                System.out.println("删除单个文件" + rootPath+path + "成功！");
-                Logger.getLogger("删除单个文件" + rootPath+path + "成功！");
+                System.out.println("删除单个文件" + path + "成功！");
+                Logger.getLogger("删除单个文件" + path + "成功！");
                 return true;
             } else {
-                System.out.println("删除单个文件" + rootPath+path + "失败！");
-                Logger.getLogger("删除单个文件" + rootPath+path + "失败！");
+                System.out.println("删除单个文件" + path + "失败！");
+                Logger.getLogger("删除单个文件" + path + "失败！");
                 return false;
             }
         } else {
-            System.out.println("删除单个文件失败：" + rootPath+path + "不存在！");
-            Logger.getLogger("删除单个文件" + rootPath+path + "不存在！");
+            System.out.println("删除单个文件失败：" + path + "不存在！");
+            Logger.getLogger("删除单个文件" + path + "不存在！");
             return false;
         }
     }

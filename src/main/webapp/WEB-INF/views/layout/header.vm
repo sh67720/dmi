@@ -28,11 +28,11 @@
                 <li class=$!about_class><a href="${basePath}/portals/about"><span>点创团队</span><i>ABOUT</i></a></li>
                 <li class=$!career_class><a href="${basePath}/portals/career"><span>点创招聘</span><i>CAREER</i></a></li>
                 <li class=$!contact_class><a href="${basePath}/portals/contact"><span>联系点创</span><i>CONTACT</i></a></li>*#
-                <li class=$!home_class><a href="${basePath}/portals/home"><span>首页</span><i></i></a></li>
-                <li class=$!works_class><a href="${basePath}/portals/work"><span>点创案例</span><i></i></a></li>
-                <li class=$!about_class><a href="${basePath}/portals/about"><span>点创团队</span><i></i></a></li>
-                <li class=$!career_class><a href="${basePath}/portals/career"><span>点创招聘</span><i></i></a></li>
-                <li class=$!contact_class><a href="${basePath}/portals/contact"><span>联系点创</span><i></i></a></li>
+                <li class=$!home_class><a href="${basePath}/portals/home">首页<i></i></a></li>
+                <li class=$!works_class><a href="${basePath}/portals/work">点创案例<i></i></a></li>
+                <li class=$!about_class><a href="${basePath}/portals/about">点创团队<i></i></a></li>
+                <li class=$!career_class><a href="${basePath}/portals/career">点创招聘<i></i></a></li>
+                <li class=$!contact_class><a href="${basePath}/portals/contact">联系点创<i></i></a></li>
             </ul>
             #*<div class="telqq">
                 *##*<p><span></span><img src="${basePath}/resources/images/toptel.jpg" /></p>*##*

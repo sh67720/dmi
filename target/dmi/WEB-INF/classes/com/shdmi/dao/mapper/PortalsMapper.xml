@@ -53,4 +53,29 @@
         </if>
         AND iscover = 1
     </select>
+
+    <!--根据类型获取图片-->
+    <select id="selectPicByType" resultType="com.shdmi.entity.SinglePic">
+        SELECT * FROM singlepicture WHERE 1=1
+        AND `type` = #{type}
+        ORDER BY createTime ASC;
+    </select>
+
+    <!--获取行业资讯信息-->
+    <select id="selectIndustryinformations" resultType="com.shdmi.entity.Industryinformation">
+        SELECT * FROM industryinformation WHERE 1=1
+        ORDER BY updateTime DESC limit #{size};
+    </select>
+
+    <select id="selectIndustryinformationById" resultType="com.shdmi.entity.Industryinformation">
+        SELECT * FROM industryinformation WHERE 1=1
+        AND id = #{id}
+        ORDER BY updateTime DESC;
+    </select>
+
+    <select id="selectPicByInformationId" resultType="com.shdmi.entity.Industryinformation">
+        SELECT * FROM industryinformationpicture WHERE 1=1
+        AND industryinformationId = #{industryinformationId}
+        ORDER BY updateTime ASC;
+    </select>
 </mapper>

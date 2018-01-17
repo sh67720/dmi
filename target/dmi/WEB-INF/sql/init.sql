@@ -39,6 +39,7 @@ CREATE TABLE `admin` (
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
 INSERT INTO `admin` VALUES (1,'admin','e10adc3949ba59abbe56e057f20f883e','2017-10-14 10:48:18','2017-10-14 10:48:18');
+INSERT INTO `admin` VALUES (2,'zhuzhu','48bd42bfc96d6a0fb3fb678fb7feb13e','2017-10-14 10:48:18','2017-10-14 10:48:18');
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +52,7 @@ DROP TABLE IF EXISTS `singlepicture`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `singlepicture` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `type` tinyint(4) NOT NULL COMMENT '图片类型(0.首页轮播大图;1.首页轮播小图;2.一起创新大牌;3.案例业务介绍;4.首页简介;5.简介顶部背景;6.工作册)',
+  `type` tinyint(4) NOT NULL COMMENT '图片类型(1.首页轮播大图;2.首页轮播小图;3.一起创新大牌;4.案例业务介绍;5.首页简介;6.简介顶部背景;7.工作册)',
   `path` varchar(100) NOT NULL COMMENT '图片路径',
   `createTime` datetime NOT NULL COMMENT '创建时间',
   `updateTime` datetime NOT NULL COMMENT '更新时间',
@@ -79,6 +80,7 @@ CREATE TABLE `industryinformation` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `coverpic` varchar(100) NOT NULL COMMENT '封面图片',
   `name` varchar(100) DEFAULT '' COMMENT '资讯名称',
+  `date` varchar(100) DEFAULT '' COMMENT '资讯发布时间',
   `createTime` datetime NOT NULL COMMENT '创建时间',
   `updateTime` datetime NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`)
